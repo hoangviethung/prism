@@ -5,8 +5,8 @@
 		"../scss/home.scss"
 	],
 	"sourcesContent": [
-		"h1 {\r\n    color: red;\r\n}\r\n"
+		""
 	],
 	"names": [],
-	"mappings": "AAAA,AAAA,EAAE,AAAC,CACC,KAAK,CAAE,GAAG,CACb"
+	"mappings": ""
 }
