@@ -6,7 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "pug": "pug -w ./views/screens -o ./ -P",
-        "sass": "node-sass --watch ./scss -o ./css --output-style compressed",
+        "sass": "node-sass --watch ./scss -o ./css --output-style compressed expanded --source-map true --source-map-contents true",
         "server": "live-server",
         "dev": "concurrently --kill-others \"npm run pug\" \"npm run sass\" \"npm run server\""
     },
