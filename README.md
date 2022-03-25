@@ -3,25 +3,25 @@
 [![Help](http://img.shields.io/badge/master-help-875A7B.svg?style=flat&colorA=8F8F8F)](https://github.com/hoangviethung/prism)
 [![Nightly Builds](http://img.shields.io/badge/master-nightly-875A7B.svg?style=flat&colorA=8F8F8F)](https://github.com/hoangviethung/prism)
 
-## Prism Wallet
+# Prism Wallet
 
 Multichain Web3 Wallet with User Governance and Rewards.
 
-# Multichain Functionality.
+## Multichain Functionality.
 
 Access multiple blockchains safely and seamlessly.
 
-# Decentralized Governance.
+## Decentralized Governance.
 
 PrismDAO governs and rewards users of Prism Wallet.
 
-# Why we built this?
+## Why we built this?
 
 Current state of cryptocurrency and blockchain is fragmented.
 
 Project owner and user incentives are misaligned.
 
-# Solution:
+## Solution:
 
 -   Blockchain agnostic platform = simple,secure and broad accessibility.
 
@@ -29,7 +29,7 @@ Project owner and user incentives are misaligned.
 
 -   Aligned incentives through cash back for users, fees distributed to community.
 
-# Market Opportunities & Use Cases
+## Market Opportunities & Use Cases
 
 -   NFT and Metaverse
 
@@ -37,7 +37,7 @@ Project owner and user incentives are misaligned.
 
 -   Play to earn gaming
 
-# Blockchain Agnostic
+## Blockchain Agnostic
 
 Beginning with Ethereum, Prism will support all popular web3 Layer 1 & 2 blockchains (subject to PrismDAO approval).
 
