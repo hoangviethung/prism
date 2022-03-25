@@ -1,0 +1,31 @@
+{
+    "name": "prism",
+    "version": "1.0.0",
+    "description": "Prism Wallet",
+    "main": "",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "pug": "pug -w ./views/screens -o ./ -P",
+        "sass": "node-sass --watch ./scss -o ./css --output-style compressed",
+        "server": "live-server",
+        "dev": "concurrently --kill-others \"npm run pug\" \"npm run sass\" \"npm run server\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hoangviethung/prism"
+    },
+    "keywords": [
+        "prism"
+    ],
+    "author": "prism",
+    "license": "ISC",
+    "dependencies": {
+        "@fancyapps/fancybox": "^3.5.7",
+        "jquery": "^3.6.0",
+        "node-sass": "^6.0.1",
+        "swiper": "^6.8.3"
+    },
+    "devDependencies": {
+        "concurrently": "^6.2.1"
+    }
+}
