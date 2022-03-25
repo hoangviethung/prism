@@ -1,0 +1,13 @@
+{
+    "name": "Prism Demo",
+    "description": "Prism Wallet Demo",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "/js/main.js"
+    },
+    "action": {
+        "default_popup": "index.html"
+    },
+    "permissions": ["storage"]
+}
