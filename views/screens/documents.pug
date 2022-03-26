@@ -4,6 +4,7 @@ block var
     - bodyClass = "documents-page"
     - pageTitle = "Prism Documents"
 block css
+    link(rel="stylesheet", href="./css/documents.css")
 block main
     section.documents
         .container
@@ -49,3 +50,32 @@ block main
             button.btn.btn-outline-error error
             button.btn.btn-lg.btn-error error
             button.btn.btn-block.btn-lg.btn-error error
+            h1 input
+            input.form-control(type="email" placeholder="Input Demo")
+            h1 input have label
+            .form-control-have-label
+                label.form-label
+                    span Your wallet name
+                    span.note (min 8 characters)
+                input.form-control(type="email" placeholder="Input Demo")
+            h1 checkbox
+            .form-check-input
+                input(type="checkbox")
+            h1 radio
+            .form-check-input
+                input(type="radio" name="demo")
+            .form-check-input
+                input(type="radio" name="demo")
+            .form-check-input
+                input(type="radio" name="demo")
+            .form-check-input
+                input(type="radio" name="demo")
+            h1 checkbox have label
+            label.form-check
+                .form-label label
+                .form-check-input
+                    input(type="checkbox")
+            h1 Group Buttons
+            .form-group-buttons-2
+                button.btn.btn-block.btn-lg.btn-outline-primary back
+                button.btn.btn-block.btn-lg.btn-primary next

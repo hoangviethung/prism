@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: rgba(
+        $color: map-get($map: $theme-colors, $key: "primary"),
+        $alpha: 0.09
+    );
+}
+
 body {
     margin: 0;
     font-family: map-get($map: $theme-fonts, $key: "font-body");

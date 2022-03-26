@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "documents.css",
+	"sources": [
+		"../scss/documents.scss"
+	],
+	"sourcesContent": [
+		".documents {\n    padding: 24px;\n}\n"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,UAAU,AAAC,CACP,OAAO,CAAE,IAAI,CAChB"
+}
