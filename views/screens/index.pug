@@ -6,5 +6,15 @@ block var
 block css
     link(rel="stylesheet", href="./css/home.css")
 block main
-    .container
-        a(href="documents.html") Read Me
+    section.welcome-screen
+        img.welcome-item-background-1(src="./images/polygon.png", alt="Prism")
+        img.welcome-item-background-2(src="./images/ethereum.png", alt="Prism")
+        img.welcome-item-background-3(src="./images/ship.png", alt="Prism")
+        .container-extension
+            .header
+                a(href="index.html").logo
+                    img(src="./images/logo-white.png", alt="Prism")
+            .body
+                p Welcome to
+                h1 PRISM WALLET
+                a.btn.btn-block.btn-lg.btn-primary-dark-1(href="#") Let’s get started  

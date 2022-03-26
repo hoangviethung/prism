@@ -1,0 +1,88 @@
+.welcome-screen {
+    position: relative;
+    background: linear-gradient(133.27deg, #547cdc 24.24%, #8e54e9 92.18%);
+    overflow: hidden;
+    .header {
+        padding-top: 8px;
+        .logo {
+            display: block;
+            max-width: 142px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    .body {
+        margin-top: 58px;
+        p,
+        h1 {
+            color: #ffffff;
+            text-align: center;
+        }
+        h1 {
+            font-size: 1.2rem;
+            margin-top: 24px;
+            margin-bottom: 100px;
+        }
+    }
+    @keyframes welcome-item-background-1 {
+        0% {
+            top: 32px;
+        }
+        25% {
+            top: 48px;
+        }
+        50% {
+            top: 32px;
+        }
+        75% {
+            top: 48px;
+        }
+        100% {
+            top: 32px;
+        }
+    }
+    @keyframes welcome-item-background-3 {
+        0% {
+            bottom: -24%;
+            right: -4%;
+        }
+        25% {
+            bottom: -26%;
+            right: -6%;
+        }
+        50% {
+            bottom: -24%;
+            right: -4%;
+        }
+        75% {
+            bottom: -26%;
+            right: -6%;
+        }
+        100% {
+            bottom: -24%;
+            right: -4%;
+        }
+    }
+    .welcome-item-background-1 {
+        max-width: 86px;
+        width: 100%;
+        position: absolute;
+        top: 32px;
+        left: 24px;
+        animation: welcome-item-background-1 10s infinite;
+    }
+    .welcome-item-background-2 {
+        max-width: 64px;
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        right: 10%;
+    }
+    .welcome-item-background-3 {
+        position: absolute;
+        bottom: -24%;
+        right: -4%;
+        animation: welcome-item-background-3 8s infinite;
+    }
+}

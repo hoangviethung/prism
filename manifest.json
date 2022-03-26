@@ -1,6 +1,6 @@
 {
-    "name": "Prism Demo",
-    "description": "Prism Wallet Demo",
+    "name": "Prism",
+    "description": "Prism Walle",
     "version": "1.0",
     "manifest_version": 3,
     "background": {
