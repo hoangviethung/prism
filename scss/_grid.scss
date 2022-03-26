@@ -1,7 +1,17 @@
 .container-extension {
     position: relative;
     width: 400px;
+    margin: 0 auto;
     min-height: 600px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.container {
+    position: relative;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
 }

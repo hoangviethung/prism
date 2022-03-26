@@ -1,0 +1,126 @@
+.wrapper-extention-fullpage {
+    background-image: url("../../images/background-extention-fullpage.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat;
+    height: 100vh;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.extention-fullpage-block {
+    background-color: #ffffff;
+    border-radius: 40px;
+    margin-top: 40px;
+    padding: 40px 80px;
+    .logo-extention {
+        display: block;
+        margin: 0 auto 40px;
+        @media (max-width: 575.98px) {
+            max-width: 120px;
+        }
+    }
+    .header {
+        margin-bottom: 40px;
+    }
+    @media (max-width: 767.98px) {
+        padding: 24px 32px;
+        border-radius: 24px;
+    }
+    @media (max-width: 575.98px) {
+        padding: 16px 24px;
+        border-radius: 16px;
+    }
+}
+
+.title-main-screen {
+    color: map-get($map: $theme-colors, $key: "primary_dark_02");
+    font-weight: 700;
+}
+
+.extention-fullpage-steps {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -40px;
+    .steps {
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 4px;
+            bottom: 4px;
+            width: 4px;
+            border: 4px solid
+                map-get($map: $theme-colors, $key: "primary_light_04");
+            z-index: 1;
+            user-select: none;
+            pointer-events: none;
+            @media (max-width: 767.98px) {
+                bottom: unset;
+                top: 50%;
+                left: 4px;
+                right: 4px;
+                width: auto;
+                transform: translateY(-50%);
+            }
+        }
+        @media (max-width: 767.98px) {
+            flex-direction: row;
+        }
+    }
+    .step__item {
+        position: relative;
+        z-index: 2;
+        > a {
+            color: #ffffff;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background-color: map-get(
+                $map: $theme-colors,
+                $key: "primary_light_04"
+            );
+            border-radius: 50%;
+            padding-top: 4px;
+            transition: 0.3s all ease-in-out;
+        }
+        + .step__item {
+            margin-top: 24px;
+            @media (max-width: 767.98px) {
+                margin-top: 0;
+                margin-left: 16px;
+            }
+        }
+        &.active {
+            > a {
+                font-weight: 700;
+                width: 32px;
+                height: 32px;
+                background-color: map-get(
+                    $map: $theme-colors,
+                    $key: "primary_light_02"
+                );
+                box-shadow: 0 0 12px rgba($color: #9039ff, $alpha: 1);
+            }
+        }
+    }
+    @media (max-width: 767.98px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: static;
+        top: unset;
+        left: unset;
+        transform: unset;
+        margin-top: 40px;
+    }
+}

@@ -38,6 +38,9 @@
             margin-left: 4px;
         }
     }
+    + .form-control-have-label {
+        margin-top: 24px;
+    }
 }
 
 .form-check-input {
@@ -122,5 +125,14 @@
     @media (max-width: 575.98px) {
         grid-template-columns: 1fr;
         grid-gap: 16px;
+    }
+}
+
+.form-container {
+    .form-group-buttons-2 {
+        margin-top: 40px;
+        @media (max-width: 575.98px) {
+            margin-top: 24px;
+        }
     }
 }
