@@ -13,6 +13,11 @@
     border-radius: 0.5rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
         border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    > i {
+        ~ span {
+            margin-left: 4px;
+        }
+    }
 }
 
 .btn-sm {
@@ -25,6 +30,19 @@
     padding: 1rem;
     border-radius: 1rem;
     min-height: 56px;
+}
+
+.btn-link {
+    color: map-get($map: $theme-colors, $key: "primary");
+    background-color: transparent;
+    padding: 0;
+    &:hover,
+    &:active {
+        color: darken(
+            $color: map-get($map: $theme-colors, $key: "primary"),
+            $amount: 10%
+        );
+    }
 }
 
 .btn-block {
