@@ -19,11 +19,35 @@
     <header></header>
     <!-- *** MAIN *** //-->
     <main>
-      <section class="welcome-screen container-extension"><img class="welcome-item-background-1" src="./images/polygon.png" alt="Prism"/><img class="welcome-item-background-2" src="./images/ethereum.png" alt="Prism"/><img class="welcome-item-background-3" src="./images/ship.png" alt="Prism"/>
-        <div class="header"><a class="logo" href="index.html"><img src="./images/logo-white.png" alt="Prism"/></a></div>
+      <section class="welcome-screen container-extension">
+        <div class="header"><a class="logo" href="index.html"><img src="./images/logo_white.png" alt="Prism"/></a>
+          <p class="fw-300">Welcome to</p>
+          <h1 class="fw-700">PRISM Wallet</h1>
+        </div>
         <div class="body">
-          <p>Welcome to</p>
-          <h1>PRISM WALLET</h1><a class="btn btn-block btn-lg btn-primary-dark-1" target="_blank" href="create-password.html">Let’s get started</a>
+          <div class="auth-form">
+            <form class="form-container">
+              <div class="form-wrapper form-auth">
+                <div class="form-control-have-label">
+                  <label class="form-label">Email</label>
+                  <input class="form-control" type="email" name="email" value=""/>
+                </div>
+                <div class="form-control-have-label">
+                  <label class="form-label">Password <span class="note">(min 8 characters)</span></label>
+                  <input class="form-control" type="password" name="password" value=""/>
+                </div>
+              </div>
+            </form>
+            <p class="forgot-password">Forgot password?</p>
+          </div><a class="btn btn-block btn-lg btn-primary-dark-1" target="_blank" href="create-password.html">Log in </a>
+          <div class="or">Or sign in with</div>
+          <div class="d-flex jc-c al-c"><img class="social" src="./images/google-social.png" alt="google"/><img class="social" src="./images/twitter-social.png" alt="twitter"/><img class="social" src="./images/facebook-social.png" alt="facebook"/></div>
+          <div class="footer-auth">
+            <div class="sign-up">
+              <p class="dont-wallet">Don't have wallet? <span class="fw-700">Sign up</span></p>
+            </div>
+            <div class="restore-wallet"><span class="fw-700">Restore a wallet</span></div>
+          </div>
         </div>
       </section>
     </main>

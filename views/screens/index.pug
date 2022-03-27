@@ -7,13 +7,32 @@ block css
     link(rel="stylesheet", href="./css/home.css")
 block main
     section.welcome-screen.container-extension
-        img.welcome-item-background-1(src="./images/polygon.png", alt="Prism")
-        img.welcome-item-background-2(src="./images/ethereum.png", alt="Prism")
-        img.welcome-item-background-3(src="./images/ship.png", alt="Prism")
         .header
             a(href="index.html").logo
-                img(src="./images/logo-white.png", alt="Prism")
+                img(src="./images/logo_white.png", alt="Prism")
+            p.fw-300 Welcome to
+            h1.fw-700 PRISM Wallet
         .body
-            p Welcome to
-            h1 PRISM WALLET
-            a.btn.btn-block.btn-lg.btn-primary-dark-1(target="_blank" href="create-password.html") Let’s get started
+            .auth-form
+                form.form-container
+                    .form-wrapper.form-auth
+                        .form-control-have-label
+                            label.form-label Email
+                            input.form-control(type="email", name="email", value="")
+                        .form-control-have-label
+                            label.form-label Password 
+                                span.note (min 8 characters)
+                            input.form-control(type="password", name="password", value="")
+                p.forgot-password Forgot password?
+            a.btn.btn-block.btn-lg.btn-primary-dark-1(target="_blank" href="create-password.html") Log in 
+            .or Or sign in with
+            .d-flex.jc-c.al-c
+                img.social(src="./images/google-social.png", alt="google")
+                img.social(src="./images/twitter-social.png", alt="twitter")
+                img.social(src="./images/facebook-social.png", alt="facebook")
+            .footer-auth
+                .sign-up
+                    p.dont-wallet Don't have wallet? 
+                        span.fw-700 Sign up
+                .restore-wallet
+                    span.fw-700 Restore a wallet

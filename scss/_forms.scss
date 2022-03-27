@@ -7,7 +7,7 @@
     color: #4e4762;
     background-color: #ffffff;
     background-clip: padding-box;
-    min-height: 40px;
+    max-height: 40px;
     line-height: 40px;
     border: 1px solid map-get($map: $theme-colors, $key: "border");
     appearance: none;
@@ -37,8 +37,7 @@
             font-weight: 400;
             margin-left: 4px;
         }
-    }
-    + .form-control-have-label {
+    }    + .form-control-have-label {
         margin-top: 24px;
     }
 }
