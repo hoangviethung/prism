@@ -22,19 +22,30 @@
       <section class="create-wallet-screen container-extension">
         <div class="header-extension"><a class="btn btn-sm btn-link-light btn-back" href="index.html"><i class="fa fa-angle-left"></i><span>Back</span></a><img class="logo" src="/images/logo_white.png" alt="Prism"/></div>
         <div class="body-extension">
+          <h1 class="title-screen">Create new wallet</h1>
           <form class="form-container" action="secret-phrases.html">
             <div class="form-wrapper">
               <div class="form-control-have-label">
-                <label class="form-label"><span>New Wallet Password</span><span class="note">(min 8 characters)</span></label>
-                <input class="form-control" type="password" placeholder="New Wallet Password"/>
+                <label class="form-label"><span>Email</span></label>
+                <input class="form-control" type="email" placeholder="loremipsum@gmail.com"/>
+              </div>
+              <div class="form-control-have-label">
+                <label class="form-label"><span>Password</span><span class="note">(min 8 characters)</span></label>
+                <input class="form-control" type="password" placeholder="Your Password"/>
               </div>
               <div class="form-control-have-label">
                 <label class="form-label"><span>Confirm</span></label>
                 <input class="form-control" type="password" placeholder="Confirm"/>
               </div>
-              <button class="btn btn-block btn-lg btn-primary">Next</button>
+              <div class="form-control-action">
+                <button class="btn btn-block btn-lg btn-primary">Sign up</button>
+              </div>
             </div>
           </form>
+          <div class="other-login">
+            <div class="or">Or sign in with</div>
+            <div class="d-flex jc-c al-c"><img class="social" src="./images/google-social.png" alt="google"/><img class="social" src="./images/twitter-social.png" alt="twitter"/><img class="social" src="./images/facebook-social.png" alt="facebook"/></div>
+          </div>
         </div>
       </section>
     </main>

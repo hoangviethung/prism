@@ -25,14 +25,16 @@ block main
                             input.form-control(type="password", name="password", value="")
                 p.forgot-password Forgot password?
             a.btn.btn-block.btn-lg.btn-primary-dark-1(href="create-wallet.html") Log in
-            .or Or sign in with
-            .d-flex.jc-c.al-c
-                img.social(src="./images/google-social.png", alt="google")
-                img.social(src="./images/twitter-social.png", alt="twitter")
-                img.social(src="./images/facebook-social.png", alt="facebook")
-            .footer-auth
-                .sign-up
-                    p.dont-wallet Don't have wallet?
-                        span.fw-700 Sign up
-                .restore-wallet
-                    a(href="restore-wallet.html").fw-700 Restore a wallet
+            .other-login
+                .or Or sign in with
+                .d-flex.jc-c.al-c
+                    img.social(src="./images/google-social.png", alt="google")
+                    img.social(src="./images/twitter-social.png", alt="twitter")
+                    img.social(src="./images/facebook-social.png", alt="facebook")
+                .footer-auth
+                    .sign-up
+                        p.dont-wallet
+                            span Don't have wallet? 
+                            span.fw-700 Sign up
+                    .restore-wallet
+                        a(href="restore-wallet.html").fw-700 Restore a wallet

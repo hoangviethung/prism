@@ -128,3 +128,51 @@
         margin-bottom: 24px;
     }
 }
+
+.other-login {
+    margin-top: 16px;
+    .or {
+        margin-bottom: 8px;
+        text-align: center;
+        position: relative;
+        &:after,
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            max-width: 42px;
+            height: 1px;
+            background-color: map-get($map: $theme-colors, $key: "grey_07");
+        }
+        &:before {
+            left: 25%;
+            transform: translateX(-25%);
+        }
+        &:after {
+            right: 25%;
+            transform: translateX(25%);
+        }
+    }
+    .social {
+        max-width: 100%;
+        width: 40px;
+        height: auto;
+        + .social {
+            margin-left: 24px;
+        }
+    }
+    .footer-auth {
+        margin-top: 22px;
+        margin-bottom: 20px;
+        text-align: center;
+        .sign-up,
+        .restore-wallet {
+            margin-bottom: 8px;
+            a {
+                color: map-get($map: $theme-colors, $key: "grey_07");
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -13,15 +13,27 @@ block main
                 span Back
             img.logo(src="/images/logo_white.png", alt="Prism")
         .body-extension
+            h1.title-screen Create new wallet
             form.form-container(action="secret-phrases.html")
                 .form-wrapper
                     .form-control-have-label
                         label.form-label
-                            span New Wallet Password
+                            span Email
+                        input.form-control(type="email" placeholder="loremipsum@gmail.com")
+                    .form-control-have-label
+                        label.form-label
+                            span Password
                             span.note (min 8 characters)
-                        input.form-control(type="password" placeholder="New Wallet Password")
+                        input.form-control(type="password" placeholder="Your Password")
                     .form-control-have-label
                         label.form-label
                             span Confirm
                         input.form-control(type="password" placeholder="Confirm")
-                    button.btn.btn-block.btn-lg.btn-primary Next
+                    .form-control-action
+                        button.btn.btn-block.btn-lg.btn-primary Sign up
+            .other-login
+                .or Or sign in with
+                .d-flex.jc-c.al-c
+                    img.social(src="./images/google-social.png", alt="google")
+                    img.social(src="./images/twitter-social.png", alt="twitter")
+                    img.social(src="./images/facebook-social.png", alt="facebook")
