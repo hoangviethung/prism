@@ -32,7 +32,9 @@
     .sign-in {
         margin: 16px 32px 0 32px;
         .forgot-password {
-            color: map-get($map: $theme-colors, $key: "info");
+            a {
+                color: map-get($map: $theme-colors, $key: "info");
+            }
             text-align: right;
             margin: 4px 0 16px 0;
             font-size: 12px;

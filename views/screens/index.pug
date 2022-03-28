@@ -23,7 +23,8 @@ block main
                             label.form-label Password 
                                 span.note (min 8 characters)
                             input.form-control(type="password", name="password", value="")
-                p.forgot-password Forgot password?
+                .forgot-password
+                    a(href="password-recovery.html") Forgot password?
             a.btn.btn-block.btn-lg.btn-primary-dark-1(href="create-wallet.html") Log in
             .other-login
                 .or Or sign in with
