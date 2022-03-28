@@ -27,9 +27,9 @@
 }
 
 .btn-lg {
-    padding: 1rem;
+    padding: 0.625rem 1rem;
     border-radius: 1rem;
-    min-height: 56px;
+    min-height: 40px;
 }
 
 .btn-link {
@@ -48,6 +48,14 @@
 .btn-block {
     display: flex;
     width: 100%;
+}
+
+.btn-next {
+    position: absolute;
+    bottom: 32px;
+    max-width: 344px;
+    left: 4px;
+    transform: translateX(8px)
 }
 
 .btn-primary {
