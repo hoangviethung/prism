@@ -36,9 +36,11 @@
     }
 }
 
-.title-main-screen {
-    color: map-get($map: $theme-colors, $key: "primary_dark_02");
+.title-screen {
+    color: map-get($map: $theme-colors, $key: "primary");
+    font-size: 1.25rem;
     font-weight: 700;
+    text-align: center;
 }
 
 .extention-fullpage-steps {

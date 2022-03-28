@@ -1,0 +1,31 @@
+extends ../layouts/layout
+
+block var
+    - bodyClass = "restore-with-secret-phrases-page"
+    - pageTitle = "Restore With Secret Phrases"
+block css
+    link(rel="stylesheet", href="./css/restore-with-secret-phrases.css")
+block main
+    section.restore-with-secret-phrases
+        .container-extension
+            .header-extension
+                a(href="index.html").btn.btn-sm.btn-link-light.btn-back
+                    i.fa.fa-angle-left
+                    span Back
+                img.logo(src="/images/logo_white.png", alt="Prism")
+            .body-extension
+                h1.title-screen Restore with secret phrases
+                .restore-pharses-form
+                    form.form-container
+                        .form-wrapper.form-auth
+                            .form-control-have-label
+                                label.form-label Enter Secret Phrases
+                                textarea(name="phrases", cols="30", rows="10") 
+                            .form-control-have-label
+                                label.form-label New Wallet Password 
+                                    span.note (min 8 characters)
+                                input.form-control(type="password", name="password", value="")
+                            .form-control-have-label
+                                label.form-label Confirm
+                                input.form-control(type="password", name="confirm", value="")
+                            a.btn.btn-block.btn-lg.btn-primary-dark-1.btn-next(href="") Next
