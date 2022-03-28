@@ -86,7 +86,8 @@
             .sign-up,
             .restore-wallet {
                 margin-bottom: 8px;
-                span {
+                a {
+                    color: map-get($map: $theme-colors, $key: "grey_07");
                     text-decoration: underline;
                 }
             }
