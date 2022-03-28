@@ -1,0 +1,27 @@
+extends ../layouts/layout
+
+block var
+    - bodyClass = "create-wallet-page"
+    - pageTitle = "Create Wallet"
+block css
+    link(rel="stylesheet", href="./css/create_wallet.css")
+block main
+    section.create-wallet-screen.container-extension
+        .header
+            img.logo-extention(src="./images/logo-black.png", alt="Prism")
+            h2.title-main-screen.ta-c Create a password
+        .body
+            form.form-container(action="secret-phrases.html")
+                .form-wrapper
+                    .form-control-have-label
+                        label.form-label
+                            span New Wallet Password
+                            span.note (min 8 characters)
+                        input.form-control(type="password" placeholder="New Wallet Password")
+                    .form-control-have-label
+                        label.form-label
+                            span Confirm
+                        input.form-control(type="password" placeholder="Confirm")
+                .form-group-buttons-2
+                    a(href="index.html" role="button").btn.btn-block.btn-lg.btn-outline-primary Back
+                    button.btn.btn-block.btn-lg.btn-primary Next
