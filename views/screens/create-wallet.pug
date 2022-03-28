@@ -7,10 +7,12 @@ block css
     link(rel="stylesheet", href="./css/create_wallet.css")
 block main
     section.create-wallet-screen.container-extension
-        .header
-            img.logo-extention(src="./images/logo-black.png", alt="Prism")
-            h2.title-main-screen.ta-c Create a password
-        .body
+        .header-extension
+            a(href="index.html").btn.btn-sm.btn-link-light.btn-back
+                i.fa.fa-angle-left
+                span Back
+            img.logo(src="/images/logo_white.png", alt="Prism")
+        .body-extension
             form.form-container(action="secret-phrases.html")
                 .form-wrapper
                     .form-control-have-label
@@ -22,6 +24,4 @@ block main
                         label.form-label
                             span Confirm
                         input.form-control(type="password" placeholder="Confirm")
-                .form-group-buttons-2
-                    a(href="index.html" role="button").btn.btn-block.btn-lg.btn-outline-primary Back
                     button.btn.btn-block.btn-lg.btn-primary Next

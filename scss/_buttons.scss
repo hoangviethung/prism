@@ -45,6 +45,16 @@
     }
 }
 
+.btn-link-light {
+    color: #ffffff;
+    background-color: transparent;
+    padding: 0;
+    &:hover,
+    &:active {
+        color: darken($color: #ffffff, $amount: 10%);
+    }
+}
+
 .btn-block {
     display: flex;
     width: 100%;

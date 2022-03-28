@@ -1,24 +1,10 @@
 @import "_varivables";
 
 .welcome-screen {
-    overflow: hidden;
-    background-color: #ffffff;
-    .header {
-        padding-top: 8px;
-        background: linear-gradient(
-                0deg,
-                rgba(0, 0, 0, 0.2),
-                rgba(0, 0, 0, 0.2)
-            ),
-            linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            linear-gradient(0deg, #430083, #430083);
-        padding-bottom: 22px;
-        clip-path: ellipse(66% 55% at 48% 34%);
+    .header-extension {
+        height: auto;
         .logo {
-            display: block;
-            max-width: 87px;
-            width: 100%;
-            margin: 0 auto;
+            max-width: 80px;
         }
         p,
         h1 {
@@ -26,20 +12,24 @@
         }
         p {
             color: map-get($map: $theme-colors, $key: "grey_06");
-            font-size: 48px;
-            line-height: 56px;
-            letter-spacing: -1px;
+            font-size: 3rem;
+            font-weight: 300;
             padding-top: 8px;
         }
         h1 {
             color: #ffffff;
-            font-size: 28px;
-            line-height: 36px;
-            letter-spacing: -0.5px;
+            font-size: 1.75rem;
+            font-weight: 700;
             margin: 4px 0 22px 0;
         }
+        &:before {
+            height: calc(100% - 70px);
+        }
+        &:after {
+            height: 100%;
+        }
     }
-    .body {
+    .sign-in {
         margin: 16px 32px 0 32px;
         .forgot-password {
             color: map-get($map: $theme-colors, $key: "info");
