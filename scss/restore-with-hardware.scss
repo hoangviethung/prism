@@ -1,0 +1,10 @@
+@import "_varivables";
+
+.content-reset-hardware {
+    margin-top: 172px;
+    text-align: center;
+    .content-text {
+        margin-bottom: 16px;
+        color: map-get($map: $theme-colors, $key: "primary")
+    }
+}
