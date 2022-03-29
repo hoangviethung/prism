@@ -43,6 +43,13 @@
     + .form-control-have-label {
         margin-top: 16px;
     }
+    .invalid-feedback {
+        color: red;
+        display: none;
+    }
+    .is-invalid {
+        display: block;
+    }
 }
 
 .form-check-input {
