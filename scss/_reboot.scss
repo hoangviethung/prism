@@ -11,11 +11,44 @@
     );
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+/* button */
+::-webkit-scrollbar-button {
+    background-color: map-get($map: $theme-colors, $key: "primary_dark_05");
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: map-get($map: $theme-colors, $key: "primary_dark_02");
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: darken(
+        $color: map-get($map: $theme-colors, $key: "primary_dark_02"),
+        $amount: 5%
+    );
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: map-get($map: $theme-colors, $key: "primary_dark_05");
+}
+
+/* Corner */
+::-webkit-scrollbar-corner {
+    background-color: map-get($map: $theme-colors, $key: "primary_dark_05");
+}
+/* Resizer */
+::-webkit-resizer {
+    background-color: map-get($map: $theme-colors, $key: "primary_dark_05");
+}
+
 body {
     margin: 0;
     font-family: map-get($map: $theme-fonts, $key: "body");
     font-size: 0.875rem;
-    font-weight: 300;
+    font-weight: 400;
     color: map-get($map: $theme-colors, $key: "txt-body");
     background-color: map-get($map: $theme-colors, $key: "neutral-background");
     overflow-x: hidden;

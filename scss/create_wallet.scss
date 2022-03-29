@@ -12,4 +12,14 @@
             margin-top: 24px;
         }
     }
+    .verification-link-block {
+        color: map-get($map: $theme-colors, $key: "grey_07");
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        padding: 0 24px;
+    }
 }
