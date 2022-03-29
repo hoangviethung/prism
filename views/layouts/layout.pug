@@ -13,17 +13,9 @@ html(lang="en")
 		// *** TITLE *** //
 		title #{pageTitle}
 	body(class=`${bodyClass}`)
-		// *** HEADER *** //
-		block header
-			include header
 		// *** MAIN *** //
 		main
 			block main
-		// *** OVERLAY *** //
-		#overlay
-		// *** FOOTER *** //
-		block footer
-			include footer
 		include js
 		// *** JS CUSTOM PAGE *** //
 		block js

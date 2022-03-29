@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "create_wallet.css",
+	"file": "create-wallet.css",
 	"sources": [
-		"../scss/create_wallet.scss",
+		"../scss/create-wallet.scss",
 		"../scss/_varivables.scss"
 	],
 	"sourcesContent": [

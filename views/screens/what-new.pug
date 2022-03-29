@@ -1,0 +1,25 @@
+extends ../layouts/layout
+
+block var
+    - bodyClass = "what-new-page"
+    - pageTitle = "What's new?"
+block css
+    link(rel="stylesheet", href="./css/what-new.css")
+block js
+block main
+    section.what-new-screen.container-extension.has-nav-extention
+        .header-extension
+            a(href="registration-completed.html").btn.btn-sm.btn-link-light.btn-back
+                i.fa.fa-angle-left
+                span Back
+            img.logo(src="/images/logo_white.png", alt="Prism")
+        .body-extension
+            h1.title-screen Welcome to PRISM wallet
+            .what-new
+                h2.sub-title-screen What's new?
+                .list-new
+                    -for(i=0;i<3;i++)
+                        a(href="#").new__item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor fusce id ipsum at mi sed auctor purus ullamcorper.
+            .form-control-action.position-center-bottom
+                a.btn.btn-block.btn-lg.btn-primary-dark-1(href="what-new.html") Let's get started
+        include ../layouts/nav

@@ -21,7 +21,7 @@ function onClickVerificationLink() {
 function onClickSecretPhrases() {
     $(".create-wallet-screen").on(
         "click",
-        ".secret-phrases-screen .btn-primary",
+        ".secret-phrases-screen .form-control-action .btn",
         function (e) {
             e.preventDefault();
             $(".secret-phrases-screen").remove();
@@ -120,7 +120,7 @@ function _renderSecretPhrasesTemplate() {
                     </button>
                 </div>
                 <div class="form-control-action position-center-bottom">
-                    <a class="btn btn-block btn-lg btn-primary" href="#" role="button">Next</a>
+                    <a class="btn btn-block btn-lg btn-primary-dark-1" href="#" role="button">Next</a>
                 </div>
             </div>`;
 }
@@ -147,7 +147,7 @@ function _renderVerifySecretPhrases() {
                         </div>
                     </div>
                 <div class="form-control-action position-center-bottom">
-                    <a class="btn btn-block btn-lg btn-primary" href="name-your-wallet.html" role="button">Next</a>
+                    <a class="btn btn-block btn-lg btn-primary-dark-1" href="name-your-wallet.html" role="button">Next</a>
                 </div>
             </div>`;
 }

@@ -1,0 +1,15 @@
+.nav-extension {
+    .nav__item {
+        font-size: 1.4rem;
+        color: map-get($map: $theme-colors, $key: "primary_light_04");
+        &:hover {
+            color: darken(
+                $color: map-get($map: $theme-colors, $key: "primary_light_04"),
+                $amount: 20%
+            );
+        }
+        &.active {
+            color: map-get($map: $theme-colors, $key: "primary");
+        }
+    }
+}
