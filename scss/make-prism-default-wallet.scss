@@ -1,0 +1,25 @@
+@import "_varivables";
+
+.content-make-default {
+    margin-top: 16px;
+    text-align: center;
+    .option-text {
+        margin-bottom: 16px;
+    }
+    .switch-button {
+        margin: 0 auto;
+    }
+    .content-warn {
+        margin-top: 19px;
+        text-align: left;
+        img {
+            max-height: 24px;
+            margin-right: 8px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            color: map-get($map: $theme-colors, $key: 'grey_07');
+        }
+    }
+}
