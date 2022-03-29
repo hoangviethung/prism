@@ -22,7 +22,11 @@ function onClickSecretPhrases() {
     $(".create-wallet-screen").on(
         "click",
         ".secret-phrases-screen .btn-primary",
-        function (e) {},
+        function (e) {
+            e.preventDefault();
+            $(".secret-phrases-screen").remove();
+            $(".body-extension").append(_renderVerifySecretPhrases());
+        },
     );
 }
 
@@ -91,7 +95,7 @@ function _renderVerificationTemplate(verificationLink) {
 
 function _renderSecretPhrasesTemplate() {
     return `<div class="secret-phrases-screen">
-    <h3 class="sub-title">Save your secret phrases to a safe place!</h3>
+    <h3 class="sub-title-screen">Save your secret phrases to a safe place!</h3>
     <div class="secret-phrases hidden-secret-phrases">
     <div class="secret-phrases__item">release</div>
     <div class="secret-phrases__item">rose</div>
@@ -100,28 +104,30 @@ function _renderSecretPhrasesTemplate() {
     <div class="secret-phrases__item">accident</div><div class="secret-phrases__item">coil</div><div class="secret-phrases__item">dove</div><div class="secret-phrases__item">glass</div><div class="secret-phrases__item">humor</div><div class="secret-phrases__item">need</div><div class="secret-phrases__item">peanut</div><div class="secret-phrases__item">rabit</div></div> <div class="group-button-action">
     <button class="btn btn-sm btn-link button-toggle-secret-phrases"><i class="fa fa-solid fa-eye"></i><span>View secret phrases</span></button>
     <button class="btn btn-sm btn-link button-copy-secret-phrases"><i class="fa fa-solid fa-copy"></i><span>Copy secret phrases</span></button>
-    </div><div class="form-control-action position-center-bottom"><a class="btn btn-block btn-lg btn-primary" href="verify-secret-phrases.html" role="button">Next</a></div></div>`;
+    </div><div class="form-control-action position-center-bottom"><a class="btn btn-block btn-lg btn-primary" href="#" role="button">Next</a></div></div>`;
 }
 
 function _renderVerifySecretPhrases() {
-    return ` <div class="verify-secret-phrases">
-        <div class="verify-secret-phrases__item">
-        <div class="sequence">1.</div>
-        <div class="value">release</div>
-        </div>
-        <div class="verify-secret-phrases__item">
-        <div class="sequence">2.</div>
-        <div class="value">update</div>
-        </div>
-        <div class="verify-secret-phrases__item">
-        <div class="sequence">3.</div>
-        <div class="value">rose</div>
-        </div>
-        <div class="verify-secret-phrases__item">
-        <div class="sequence">4.</div>
-        <div class="value">void</div>
-        </div>
-    </div>`;
+    return `<div class="verify-secret-phrases-screen">
+    <h3 class="sub-title-screen">Save your secret phrases to a safe place!</h3>
+    <div class="verify-secret-phrases">
+    <div class="verify-secret-phrases__item">
+    <div class="sequence">1.</div>
+    <div class="value">release</div>
+    </div>
+    <div class="verify-secret-phrases__item">
+    <div class="sequence">2.</div>
+    <div class="value">update</div>
+    </div>
+    <div class="verify-secret-phrases__item">
+    <div class="sequence">3.</div>
+    <div class="value">rose</div>
+    </div>
+    <div class="verify-secret-phrases__item">
+    <div class="sequence">4.</div>
+    <div class="value">void</div>
+    </div>
+    </div><div class="form-control-action position-center-bottom"><a class="btn btn-block btn-lg btn-primary" href="#" role="button">Next</a></div></div>`;
 }
 
 $(function () {
@@ -129,4 +135,5 @@ $(function () {
     onClickVerificationLink();
     viewSecretPhrases();
     copySecretPhrases();
+    onClickSecretPhrases();
 });

@@ -1,9 +1,6 @@
 @import "_varivables";
 
 .create-wallet-screen {
-    .form-container {
-        margin-top: 16px;
-    }
     .form-wrapper {
         border-radius: 16px;
     }
@@ -25,13 +22,6 @@
 }
 
 .secret-phrases-screen {
-    margin-top: 16px;
-    .sub-title {
-        font-size: 0.875rem;
-        color: map-get($map: $theme-colors, $key: "grey_07");
-        font-weight: 700;
-        text-align: center;
-    }
     .secret-phrases {
         position: relative;
         display: grid;
@@ -41,7 +31,6 @@
             $alpha: 0.5
         );
         border-radius: 8px;
-        margin-top: 16px;
         @media (max-width: 575.98px) {
             grid-template-columns: repeat(3, 1fr);
             margin-top: 24px;
@@ -118,6 +107,30 @@
             + .btn {
                 margin-left: 24px;
             }
+        }
+    }
+}
+
+.verify-secret-phrases-screen {
+    .verify-secret-phrases {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+    }
+    .verify-secret-phrases__item {
+        color: map-get($map: $theme-colors, $key: "grey_07");
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        min-height: 56px;
+        background-color: #ffffff;
+        padding: 16px;
+        border: 1px solid map-get($map: $theme-colors, $key: "border");
+        border-radius: 8px;
+        user-select: none;
+        cursor: pointer;
+        .value {
+            margin: 0 auto;
         }
     }
 }
