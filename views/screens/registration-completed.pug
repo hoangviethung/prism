@@ -1,0 +1,21 @@
+extends ../layouts/layout
+
+block var
+    - bodyClass = "registration-completed"
+    - pageTitle = "Registration Completed"
+block css
+    link(rel="stylesheet", href="./css/registration-completed.css")
+block main
+    section.name-wallet
+        .container-extension
+            .header-extension
+                a(href="index.html").btn.btn-sm.btn-link-light.btn-back
+                    i.fa.fa-angle-left
+                    span Back
+                img.logo(src="/images/logo_white.png", alt="Prism")
+            .body-extension
+                h1.title-screen Registration completed!
+                .content-registration-completed
+                    p.second-title-screen.fw-700 Welcome to Prism
+                    img(src="/images/welcome-registration.png", alt="welcome registration")
+                a.btn.btn-block.btn-lg.btn-primary-dark-1.btn-next(href="") To your wallet

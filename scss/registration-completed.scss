@@ -1,0 +1,13 @@
+@import "_varivables";
+
+.content-registration-completed {
+    text-align: center;
+    margin-top: 136px;
+    p {
+        font-size: 28px;
+        line-height: 36px;
+        color: map-get($map: $theme-colors, $key: "primary_dark_02");
+        letter-spacing: -0.5px;
+        margin-bottom: 16px;
+    }
+}

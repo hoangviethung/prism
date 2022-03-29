@@ -1,0 +1,25 @@
+extends ../layouts/layout
+
+block var
+    - bodyClass = "name-your-wallet"
+    - pageTitle = "Name your wallet"
+block css
+    link(rel="stylesheet", href="./css/name-your-wallet.css")
+block main
+    section.name-wallet
+        .container-extension
+            .header-extension
+                a(href="index.html").btn.btn-sm.btn-link-light.btn-back
+                    i.fa.fa-angle-left
+                    span Back
+                img.logo(src="/images/logo_white.png", alt="Prism")
+            .body-extension
+                h1.title-screen Create new wallet
+                .name-wallet-form
+                    p.second-title-screen.fw-700 Name your wallet
+                    form.form-container(action="") 
+                        .form-wrapper.form-auth
+                            .form-control-have-label
+                                label.form-label Your wallet name
+                                input.form-control(type="text", name="name")
+                            a.btn.btn-block.btn-lg.btn-primary-dark-1.btn-next(href="make-prism-default-wallet.html") Next

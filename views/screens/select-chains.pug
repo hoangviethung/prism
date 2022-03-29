@@ -1,0 +1,78 @@
+extends ../layouts/layout
+
+block var
+    - bodyClass = "select-chains-to-use-prism"
+    - pageTitle = "Select chains to use Prism"
+block css
+    link(rel="stylesheet", href="./css/select-chains.css")
+block main
+    section.name-wallet
+        .container-extension
+            .header-extension
+                a(href="index.html").btn.btn-sm.btn-link-light.btn-back
+                    i.fa.fa-angle-left
+                    span Back
+                img.logo(src="/images/logo_white.png", alt="Prism")
+            .body-extension
+                h1.title-screen Select chains to use Prism
+                .content-select-chains
+                    ul
+                        li
+                            .option-select
+                                img(src="/images/bitcoin-icon.png", alt="bitcoin")
+                                p Bitcoin
+                            label.switch-button 
+                                input(type="checkbox")
+                                span.slider.round
+                        li
+                            .option-select
+                                img(src="/images/ethereum-icon.png", alt="ethereum")
+                                p Ethereum
+                            label.switch-button 
+                                input(type="checkbox")
+                                span.slider.round
+                        li
+                            .option-select
+                                img(src="/images/avalanche-icon.png", alt="avalanche")
+                                p Avalanche
+                            label.switch-button 
+                                input(type="checkbox")
+                                span.slider.round
+                        li
+                            .option-select
+                                img(src="/images/binance-icon.png", alt="binance")
+                                p Binance
+                            label.switch-button 
+                                input(type="checkbox")
+                                span.slider.round
+                        li
+                            .option-select
+                                img(src="/images/polkadot-icon.png", alt="polkadot")
+                                p Polkadot
+                            label.switch-button 
+                                input(type="checkbox")
+                                span.slider.round
+                        li
+                            .option-select
+                                img(src="/images/polygon-icon.png", alt="polygon")
+                                p Polygon
+                            label.switch-button 
+                                input(type="checkbox")
+                                span.slider.round
+                        li
+                            .option-select
+                                img(src="/images/terra-icon.png", alt="terra")
+                                p Terra
+                            label.switch-button 
+                                input(type="checkbox")
+                                span.slider.round
+                        li
+                            .option-select
+                                img(src="/images/solana-icon.png", alt="solana")
+                                p Solana
+                            label.switch-button
+                                input(type="checkbox")
+                                span.slider.round
+                    
+                    .content-select-chains.d-flex
+                    a.btn.btn-block.btn-lg.btn-primary-dark-1.btn-next(href="registration-completed.html") Next

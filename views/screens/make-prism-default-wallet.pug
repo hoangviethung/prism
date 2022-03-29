@@ -1,0 +1,27 @@
+extends ../layouts/layout
+
+block var
+    - bodyClass = "name-your-wallet"
+    - pageTitle = "Name your wallet"
+block css
+    link(rel="stylesheet", href="./css/make-prism-default-wallet.css")
+block main
+    section.name-wallet
+        .container-extension
+            .header-extension
+                a(href="index.html").btn.btn-sm.btn-link-light.btn-back
+                    i.fa.fa-angle-left
+                    span Back
+                img.logo(src="/images/logo_white.png", alt="Prism")
+            .body-extension
+                h1.title-screen Make Prism your default wallet
+                .content-make-default
+                    p.option-text This option make Prism your default browser wallet when you interact with web applications.
+                    label.switch-button 
+                        input(type="checkbox")
+                        span.slider.round
+                    .content-warn.d-flex
+                        img(src="/images/warning-icon.png", alt="warn")
+                        p.fw-700 Warning: 
+                            span.fw-300 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl aliquam in varius amet, diam enim ut. In suscipit pellentesque mauris egestas a quam. Ultricies habitasse ante placerat massa dolor interdum tellus. Nisl pretium amet, hac aliquet vitae blandit enim. Et lacinia egestas turpis cursus leo.
+                    a.btn.btn-block.btn-lg.btn-primary-dark-1.btn-next(href="select-chains.html") Next
