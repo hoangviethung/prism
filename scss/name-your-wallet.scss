@@ -3,7 +3,7 @@
 .name-wallet-form {
     margin-top: 16px;
     .second-title-screen {
-        color: map-get($map: $theme-colors, $key: 'grey_07');
+        color: map-get($map: $theme-colors, $key: "grey_07");
         text-align: center;
         margin-bottom: 16px;
     }

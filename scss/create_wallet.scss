@@ -1,15 +1,136 @@
 @import "_varivables";
 
 .create-wallet-screen {
-    .form-container {
-        margin-top: 16px;
-    }
     .form-wrapper {
         border-radius: 16px;
     }
     .extention-fullpage-block {
         @media (max-width: 767.98px) {
             margin-top: 24px;
+        }
+    }
+    .verification-link-block {
+        color: map-get($map: $theme-colors, $key: "grey_07");
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        padding: 0 24px;
+    }
+}
+
+.secret-phrases-screen {
+    .secret-phrases {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: rgba(
+            $color: map-get($map: $theme-colors, $key: "primary_light_05"),
+            $alpha: 0.5
+        );
+        border-radius: 8px;
+        @media (max-width: 575.98px) {
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 24px;
+        }
+        &.hidden-secret-phrases {
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background-color: rgba(
+                    $color:
+                        map-get($map: $theme-colors, $key: "primary_light_05"),
+                    $alpha: 0.2
+                );
+                z-index: 10;
+                backdrop-filter: blur(8px);
+                border-radius: 8px;
+                pointer-events: none;
+                border: 1px solid map-get($map: $theme-colors, $key: "grey_07");
+            }
+            &:before {
+                content: "\f06e";
+                color: #292d32;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                font-size: 2rem;
+                transform: translate(-50%, -50%);
+                font-family: map-get($map: $theme-fonts, $key: "icons");
+                z-index: 15;
+                cursor: pointer;
+            }
+        }
+        .secret-phrases__copied {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: map-get(
+                $map: $theme-colors,
+                $key: "primary_light_05"
+            );
+            border-radius: 16px;
+            z-index: 20;
+            .icon {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1rem;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+    }
+    .secret-phrases__item {
+        text-align: center;
+        line-height: 40px;
+        font-weight: 700;
+    }
+    .group-button-action {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 16px;
+        .btn {
+            + .btn {
+                margin-left: 24px;
+            }
+        }
+    }
+}
+
+.verify-secret-phrases-screen {
+    .verify-secret-phrases {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+    }
+    .verify-secret-phrases__item {
+        color: map-get($map: $theme-colors, $key: "grey_07");
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        min-height: 56px;
+        background-color: #ffffff;
+        padding: 16px;
+        border: 1px solid map-get($map: $theme-colors, $key: "border");
+        border-radius: 8px;
+        user-select: none;
+        cursor: pointer;
+        .value {
+            margin: 0 auto;
         }
     }
 }
