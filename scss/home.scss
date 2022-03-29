@@ -65,21 +65,8 @@
             max-width: 100%;
             width: 40px;
             height: auto;
-        }
-        .social:nth-child(2) {
-            margin: 0 24px 0 24px;
-        }
-        .footer-auth {
-            margin-top: 22px;
-            margin-bottom: 20px;
-            text-align: center;
-            .sign-up,
-            .restore-wallet {
-                margin-bottom: 8px;
-                a {
-                    color: map-get($map: $theme-colors, $key: "grey_07");
-                    text-decoration: underline;
-                }
+            + .social {
+                margin-left: 24px;
             }
         }
     }
