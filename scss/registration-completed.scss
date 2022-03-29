@@ -2,12 +2,15 @@
 
 .content-registration-completed {
     text-align: center;
-    margin-top: 136px;
-    p {
-        font-size: 28px;
-        line-height: 36px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 32px;
+    .second-title-screen {
+        font-size: 1.75rem;
         color: map-get($map: $theme-colors, $key: "primary_dark_02");
-        letter-spacing: -0.5px;
         margin-bottom: 16px;
     }
 }

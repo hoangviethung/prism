@@ -1,3 +1,3 @@
-.content-registration-completed{text-align:center;margin-top:136px}.content-registration-completed p{font-size:28px;line-height:36px;color:#5300a3;letter-spacing:-0.5px;margin-bottom:16px}
+.content-registration-completed{text-align:center;position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);width:100%;padding:0 32px}.content-registration-completed .second-title-screen{font-size:1.75rem;color:#5300a3;margin-bottom:16px}
 
 /*# sourceMappingURL=registration-completed.css.map */
