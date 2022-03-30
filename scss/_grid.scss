@@ -56,16 +56,16 @@
         padding: 16px;
         background-color: #ffffff;
         min-height: $height-container-extention - $height-header-extention +
-            190px - 16px;
+            198px - 16px;
         border-radius: 8px;
         box-shadow: 0px 0px 12px rgba(200, 191, 225, 0.54);
-        margin: -190px 16px 16px 16px;
+        margin: -198px 16px 16px 16px;
         z-index: 50;
     }
     &.has-nav-extention {
         .body-extension {
             min-height: $height-container-extention - $height-header-extention +
-                190px - 16px - 56px;
+                198px - 16px - 56px;
         }
     }
     &.has-action-button {

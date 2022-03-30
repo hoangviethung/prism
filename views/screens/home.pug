@@ -22,4 +22,30 @@ block main
                 .tabs
                     .tab__item.active Coins
                     .tab__item Collectibles
+            .control-panel
+                .search
+                    input.form-control(type="text" placeholder="Search")
+                .filter
+                    .form-select
+                        select(name="")
+                            option(value="#") All Chain
+                            option(value="#") All Chain
+                            option(value="#") All Chain
+            .coins
+                -for(i=0;i<4;i++)
+                    .coin__item
+                        .left
+                            .icon
+                                img(src="./images/bitcoin-icon.png", alt="bitcoin")
+                            .name
+                                h4
+                                    span 12
+                                    span BTC
+                                h3
+                                    span $
+                                    span 391,402
+                        .right
+                            p.percentage +1.6%
+                            button.btn-more
+                                i.far.fa-ellipsis-h
         include ../layouts/nav
