@@ -1,0 +1,13 @@
+@import "_varivables";
+
+.restore-with-json {
+    .restore-json-form {
+        margin-top: 16px;
+        .browser-file {
+            margin-bottom: 16px;
+            .browser-title {
+                margin-right: 8px;
+            }
+        }
+    }
+}

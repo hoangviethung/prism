@@ -1,0 +1,27 @@
+extends ../layouts/layout
+
+block var
+    - bodyClass = "restore-with-json"
+    - pageTitle = "Restore With JSON"
+block css
+    link(rel="stylesheet", href="./css/restore-with-json.css")
+block main
+    section.restore-with-json
+        .container-extension
+            .header-extension
+                a(href="restore-wallet.html").btn.btn-sm.btn-link-light.btn-back
+                    i.fa.fa-angle-left
+                    span Back
+                img.logo(src="/images/logo_white.png", alt="Prism")
+            .body-extension
+                h1.title-screen Restore with Json
+                .restore-json-form
+                    .browser-file.d-flex.al-c
+                        p.fw-700.browser-title Select Json file
+                        a.btn.btn-lg.btn-outline-primary Browser file
+                    form.form-container
+                        .form-wrapper.form-auth
+                            .form-control-have-label
+                                label.form-label Enter file password
+                                input.form-control(type="password", name="password")
+                            a.btn.btn-block.btn-lg.btn-primary-dark-1.btn-next Next

@@ -1,0 +1,22 @@
+extends ../layouts/layout
+
+block var
+    - bodyClass = "restore-with-hardware"
+    - pageTitle = "Restore with hardware"
+block css
+    link(rel="stylesheet", href="./css/restore-with-hardware.css")
+block main
+    section.name-wallet
+        .container-extension
+            .header-extension
+                a(href="index.html").btn.btn-sm.btn-link-light.btn-back
+                    i.fa.fa-angle-left
+                    span Back
+                img.logo(src="/images/logo_white.png", alt="Prism")
+            .body-extension
+                .content-reset-hardware
+                    .content-text
+                        p Connecting to your hardware wallet
+                        p Please wait...
+                    .loading-container
+
