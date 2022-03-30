@@ -7,4 +7,8 @@
         margin-bottom: 16px;
         color: map-get($map: $theme-colors, $key: "primary")
     }
+    .loading-container {
+        margin: 0 auto;
+        width: 30px;
+    }
 }
