@@ -155,6 +155,7 @@
                     "primary_light_04");
     }
     .tab__item {
+        cursor: pointer;
         color: map-get($map: $theme-colors, $key: "grey_05");
         font-size: 1rem;
         font-weight: 700;
@@ -163,9 +164,17 @@
         align-items: center;
         width: 100%;
         height: 32px;
+        user-select: none;
+        border-bottom: 3px solid transparent;
+        transition: 0.3s all ease-in-out;
+        &:hover {
+            color: darken(
+                $color: map-get($map: $theme-colors, $key: "grey_05"),
+                $amount: 10%
+            );
+        }
         &.active {
-            box-shadow: inset 0 -3px 0 map-get($map: $theme-colors, $key:
-                        "primary");
+            border-color: map-get($map: $theme-colors, $key: "primary");
         }
     }
 }

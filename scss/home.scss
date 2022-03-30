@@ -28,4 +28,83 @@
             }
         }
     }
+    .control-panel {
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 16px;
+    }
+    .coins {
+        margin-top: 16px;
+        .coin__item {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .left {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                .name {
+                    padding-left: 8px;
+                }
+                h4,
+                h3 {
+                    font-size: 0.875rem;
+                    font-weight: 400;
+                }
+                h4 {
+                    color: map-get($map: $theme-colors, $key: "grey_07");
+                }
+                h3 {
+                    color: map-get($map: $theme-colors, $key: "grey_05");
+                    margin-top: 2px;
+                }
+            }
+            .right {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                margin-left: auto;
+                .percentage {
+                    color: map-get($map: $theme-colors, $key: "grey_05");
+                    margin-right: 16px;
+                }
+                .btn-more {
+                    color: #ffffff;
+                    border: 0;
+                    width: 20px;
+                    height: 20px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: map-get(
+                        $map: $theme-colors,
+                        $key: "grey_05"
+                    );
+                    border-radius: 50%;
+                    transition: 0.3s all ease-in-out;
+                    &:hover {
+                        background-color: darken(
+                            $color:
+                                map-get($map: $theme-colors, $key: "grey_05"),
+                            $amount: 10%
+                        );
+                    }
+                    &:active {
+                        background-color: darken(
+                            $color:
+                                map-get($map: $theme-colors, $key: "grey_05"),
+                            $amount: 25%
+                        );
+                    }
+                }
+            }
+            + .coin__item {
+                margin-top: 8px;
+                padding-top: 8px;
+                border-top: 1px solid
+                    map-get($map: $theme-colors, $key: "grey_02");
+            }
+        }
+    }
 }
