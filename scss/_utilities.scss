@@ -1,41 +1,3 @@
-.wrapper-extention-fullpage {
-    background-image: url("../../images/background-extention-fullpage.png");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: repeat;
-    height: 100vh;
-    width: 100%;
-    overflow-y: auto;
-    padding: 40px 0;
-    @media (max-width: 575.98px) {
-        padding: 24px 0;
-    }
-}
-
-.extention-fullpage-block {
-    background-color: #ffffff;
-    border-radius: 40px;
-    padding: 40px 80px;
-    .logo-extention {
-        display: block;
-        margin: 0 auto 40px;
-        @media (max-width: 575.98px) {
-            max-width: 120px;
-        }
-    }
-    .header {
-        margin-bottom: 40px;
-    }
-    @media (max-width: 767.98px) {
-        padding: 24px 32px;
-        border-radius: 24px;
-    }
-    @media (max-width: 575.98px) {
-        padding: 16px 24px;
-        border-radius: 16px;
-    }
-}
-
 .title-screen {
     color: map-get($map: $theme-colors, $key: "primary");
     font-size: 1.25rem;
@@ -181,6 +143,29 @@
         }
         .sign-up {
             margin-bottom: 8px;
+        }
+    }
+}
+
+.tabs-extension-container {
+    .tabs {
+        display: flex;
+        box-shadow: 0px 1px 0px;
+        box-shadow: inset 0 -1px 0 map-get($map: $theme-colors, $key:
+                    "primary_light_04");
+    }
+    .tab__item {
+        color: map-get($map: $theme-colors, $key: "grey_05");
+        font-size: 1rem;
+        font-weight: 700;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 32px;
+        &.active {
+            box-shadow: inset 0 -3px 0 map-get($map: $theme-colors, $key:
+                        "primary");
         }
     }
 }

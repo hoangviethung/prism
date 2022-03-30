@@ -1,0 +1,73 @@
+@import "_varivables";
+
+.welcome-screen {
+    .header-extension {
+        height: auto;
+        .logo {
+            max-width: 80px;
+        }
+        p,
+        h1 {
+            text-align: center;
+        }
+        p {
+            color: map-get($map: $theme-colors, $key: "grey_06");
+            font-size: 3rem;
+            font-weight: 300;
+            padding-top: 8px;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin: 4px 0 22px 0;
+        }
+        &:before {
+            height: calc(100% - 70px);
+        }
+        &:after {
+            height: 100%;
+        }
+    }
+    .login-in {
+        margin: 16px 32px 0 32px;
+        .forgot-password {
+            color: map-get($map: $theme-colors, $key: "info");
+            text-align: right;
+            margin: 4px 0 16px 0;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .or {
+            margin: 16px 0 8px 0;
+            text-align: center;
+            position: relative;
+            &:after,
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                max-width: 42px;
+                height: 1px;
+                background-color: map-get($map: $theme-colors, $key: "grey_07");
+            }
+            &:before {
+                left: 25%;
+                transform: translateX(-25%);
+            }
+            &:after {
+                right: 25%;
+                transform: translateX(25%);
+            }
+        }
+        .social {
+            max-width: 100%;
+            width: 40px;
+            height: auto;
+            + .social {
+                margin-left: 24px;
+            }
+        }
+    }
+}

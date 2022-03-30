@@ -1,0 +1,25 @@
+extends ../layouts/layout
+
+block var
+    - bodyClass = "home-page"
+    - pageTitle = "Prism | Home Page"
+block css
+    link(rel="stylesheet", href="./css/home.css")
+block main
+    section.home-screen.container-extension.has-nav-extention
+        .header-extension
+            a.logo(href="index.html")
+                img(src="./images/logo_white.png", alt="Prism")
+            h1.total-current-money
+                span.currency $
+                span 0,00
+            .home-main-actions
+                a.btn.btn-sm.btn-primary(href="#") Send
+                a.btn.btn-sm.btn-primary(href="#") Receive
+                a.btn.btn-sm.btn-primary(href="#") Buy
+        .body-extension
+            .tabs-extension-container
+                .tabs
+                    .tab__item.active Coins
+                    .tab__item Collectibles
+        include ../layouts/nav

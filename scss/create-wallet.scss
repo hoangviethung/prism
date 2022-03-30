@@ -4,11 +4,6 @@
     .form-wrapper {
         border-radius: 16px;
     }
-    .extention-fullpage-block {
-        @media (max-width: 767.98px) {
-            margin-top: 24px;
-        }
-    }
     .verification-link-block {
         color: map-get($map: $theme-colors, $key: "grey_07");
         position: absolute;

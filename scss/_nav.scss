@@ -1,4 +1,19 @@
 .nav-extension {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    right: 16px;
+    height: 56px;
+    border-top: 1px solid map-get($map: $theme-colors, $key: "primary_light_05");
+    .nav-list {
+        display: flex;
+        height: 100%;
+        width: calc(100% - 32px);
+        margin: 0 auto;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     .nav__item {
         font-size: 1.4rem;
         color: map-get($map: $theme-colors, $key: "primary_light_04");

@@ -1,10 +1,10 @@
 extends ../layouts/layout
 
 block var
-    - bodyClass = "index-page"
-    - pageTitle = "Prism Home Page"
+    - bodyClass = "login-page"
+    - pageTitle = "Prism | Login Page"
 block css
-    link(rel="stylesheet", href="./css/home.css")
+    link(rel="stylesheet", href="./css/login.css")
 block main
     section.welcome-screen.container-extension
         .header-extension
@@ -12,7 +12,7 @@ block main
                 img(src="./images/logo_white.png", alt="Prism")
             p Welcome to
             h1 PRISM Wallet
-        .sign-in
+        .login-in
             .auth-form
                 form.form-container
                     .form-wrapper.form-auth
