@@ -68,6 +68,12 @@
                 190px - 16px - 56px;
         }
     }
+    &.has-action-button {
+        .body-extension {
+            min-height: $height-container-extention - $height-header-extention +
+                190px - 16px - 56px - 56px;
+        }
+    }
 }
 
 .container {

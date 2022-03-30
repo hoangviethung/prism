@@ -1,0 +1,44 @@
+@import "_varivables";
+
+.has-action-button {
+    .position-center-bottom {
+        justify-content: space-between;
+        bottom: 72px;
+        a {
+            max-width: 176px;
+        }
+    }
+}
+
+.body-claim-token {
+    .header-claim-token {
+        justify-content: space-between;
+        border: 1px solid map-get($map: $theme-colors, $key: "grey_02");
+        padding: 4px;
+        border-radius: 8px;
+        .claim-from {
+            img {
+                margin-right: 8px;
+            }
+        }
+        .claim-to {
+            .arr {
+                margin-right: 16px;
+            }
+            .avatar {
+                margin-right: 8px;
+            }
+        }
+    }
+    .with-draw {
+        margin-top: 16px;
+        .draw-title {
+            line-height: 20px;
+        }
+        .amount-draw {
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -1px;
+        }
+    }
+}
