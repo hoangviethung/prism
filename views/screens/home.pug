@@ -47,11 +47,23 @@ block main
                         .right
                             p.percentage +1.6%
                             .dropdown
-                                button.btn-more.dropdown-toggle#dropdownMenuButton(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                                button.btn-more.dropdown-toggle(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
                                     i.far.fa-ellipsis-h
-                                .dropdown-menu(aria-labelledby="dropdownMenuButton")
-                                    a.dropdown-item(href="#") Action
-                                    a.dropdown-item(href="#") Action
-                                    a.dropdown-item(href="#") Action
-                                    a.dropdown-item(href="#") Action
+                                .dropdown-menu
+                                    a.dropdown-item(href="#")
+                                        .icon
+                                            i.far.fa-pen
+                                        .text Action
+                                    a.dropdown-item(href="#")
+                                        .icon
+                                            i.far.fa-pen
+                                        .text Action
+                                    a.dropdown-item(href="#")
+                                        .icon
+                                            i.far.fa-pen
+                                        .text Action
+                                    a.dropdown-item(href="#")
+                                        .icon
+                                            i.far.fa-pen
+                                        .text Action
         include ../layouts/nav
