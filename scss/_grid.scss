@@ -5,6 +5,7 @@
     height: $height-container-extention;
     background-color: #ffffff;
     overflow-y: auto;
+    overflow-x: hidden;
     .header-extension {
         position: relative;
         height: $height-header-extention;
@@ -57,6 +58,7 @@
         background-color: #ffffff;
         min-height: $height-container-extention - $height-header-extention +
             198px - 16px;
+        overflow-y: auto;
         border-radius: 8px;
         box-shadow: 0px 0px 12px rgba(200, 191, 225, 0.54);
         margin: -198px 16px 16px 16px;
@@ -65,6 +67,8 @@
     &.has-nav-extention {
         .body-extension {
             min-height: $height-container-extention - $height-header-extention +
+                198px - 16px - 56px;
+            max-height: $height-container-extention - $height-header-extention +
                 198px - 16px - 56px;
         }
     }

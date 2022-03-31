@@ -7,6 +7,8 @@
                 margin: -86px 16px 16px 16px;
                 min-height: $height-container-extention -
                     $height-header-extention + 86px - 16px - 56px;
+                max-height: $height-container-extention -
+                    $height-header-extention + 86px - 16px - 56px;
             }
         }
     }

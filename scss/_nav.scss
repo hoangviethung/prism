@@ -1,10 +1,12 @@
 .nav-extension {
-    position: absolute;
+    position: sticky;
     bottom: 0;
     left: 16px;
     right: 16px;
     height: 56px;
     border-top: 1px solid map-get($map: $theme-colors, $key: "primary_light_05");
+    z-index: 999;
+    background-color: #ffffff;
     .nav-list {
         display: flex;
         height: 100%;
