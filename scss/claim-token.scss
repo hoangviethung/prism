@@ -2,8 +2,12 @@
 
 .has-action-button {
     .position-center-bottom {
-        justify-content: space-between;
+        position: sticky;
+        z-index: 1000;
+        margin-right: 16px;
+        margin-left: 16px;
         bottom: 72px;
+        justify-content: space-between;
         a {
             max-width: 176px;
         }
