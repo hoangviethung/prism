@@ -1,5 +1,6 @@
 .tabs-extension-container {
     margin-top: 16px !important;
+    position: unset;
 }
 
 .gas-fee {
@@ -26,6 +27,7 @@
 }
 
 .gas {
+    display: flex;
     margin-top: 16px;
     .gas-price {
         margin-right: 16px;

@@ -1,6 +1,7 @@
 @import "_varivables";
 
 .has-action-button {
+    overflow-y: hidden;
     .position-center-bottom {
         position: sticky;
         z-index: 1000;
@@ -43,6 +44,47 @@
             font-size: 48px;
             line-height: 56px;
             letter-spacing: -1px;
+        }
+    }
+}
+
+.content-success-claim {
+    text-align: center;
+    margin-top: 82px;
+    .success-title {
+        margin-bottom: 16px;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -0.3px;
+        color: map-get($map: $theme-colors, $key: "primary_dark_01");
+    }
+    img {
+        margin-bottom: 16px;
+    }
+    .have-claim {
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 24px;
+        color: map-get($map: $theme-colors, $key: 'grey_07');
+    }
+    .amount-coin {
+        margin-bottom: 16px;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -0.5px;
+        color: map-get($map: $theme-colors, $key: "primary");
+    }
+    .amount-to-prism {
+        font-size: 12px;
+        line-height: 16px;
+        color: map-get($map: $theme-colors, $key: "primary_dark_01");
+    }
+}
+
+#claim-token {
+    .position-center-bottom {
+        a {
+            max-width: unset;
         }
     }
 }
