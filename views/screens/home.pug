@@ -3,6 +3,8 @@ extends ../layouts/layout
 block var
     - bodyClass = "home-page"
     - pageTitle = "Prism | Home Page"
+block js_run_first
+    script(src="./js/home.js")
 block css
     link(rel="stylesheet", href="./css/home.css")
 block main

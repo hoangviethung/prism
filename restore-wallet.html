@@ -5,6 +5,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- *** RUN BEFORE DOM *** //-->
     <!-- *** CSS MAIN *** //-->
     <link rel="stylesheet" href="./css/main.css"/>
     <!-- *** CSS CUSTOM PAGE *** //-->
@@ -27,11 +28,11 @@
                   <p>Restore with Secret phrases</p></a></li>
               <li class="restore-item"><a class="d-flex al-c" href="restore-with-json.html"><img src="/images/res-json.png" alt="restore"/>
                   <p>Restore with Json file</p></a></li>
-              <li class="restore-item"><a class="d-flex al-c" href="restore-with-hardware.html"><img src="/images/res-trezor.png" alt="restore"/>
+              <li class="restore-item"><a class="d-flex al-c" id="restore-trezor"><img src="/images/res-trezor.png" alt="restore"/>
                   <p>Restore with Trezor wallet</p></a></li>
-              <li class="restore-item"><a class="d-flex al-c" href="restore-with-hardware.html"><img src="/images/res-ledger.png" alt="restore"/>
+              <li class="restore-item"><a class="d-flex al-c" id="restore-ledger" href="restore-with-hardware.html"><img src="/images/res-ledger.png" alt="restore"/>
                   <p>Restore with Ledger wallet</p></a></li>
-              <li class="restore-item"><a class="d-flex al-c" href="restore-with-hardware.html"><img src="/images/res-grid.png" alt="restore"/>
+              <li class="restore-item"><a class="d-flex al-c" id="restore-grid" href="restore-with-hardware.html"><img src="/images/res-grid.png" alt="restore"/>
                   <p>Restore with Grid+ device</p></a></li>
             </ul>
           </div>
@@ -244,5 +245,6 @@
     <!-- *** MAIN JS *** //-->
     <script src="./js/main.js"></script>
     <!-- *** JS CUSTOM PAGE *** //-->
+    <script src="./js/restore-wallet.js"></script>
   </body>
 </html>
