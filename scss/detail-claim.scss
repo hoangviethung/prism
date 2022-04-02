@@ -24,7 +24,7 @@
 .no-rate {
     font-size: 12px;
     line-height: 16px;
-    color: map-get($map: $theme-colors, $key: 'grey_05');
+    color: map-get($map: $theme-colors, $key: "grey_05");
 }
 
 .gas {
@@ -33,14 +33,15 @@
     .gas-price {
         margin-right: 16px;
     }
-    .gas-price, .gas-limit {
+    .gas-price,
+    .gas-limit {
         .label {
             margin-bottom: 3px;
         }
         input {
             min-width: 150px;
             padding: 8px;
-            border: 1px solid map-get($map: $theme-colors, $key: 'grey_02');
+            border: 1px solid map-get($map: $theme-colors, $key: "grey_02");
             border-radius: 8px;
             font-size: 12px;
             line-height: 16px;
@@ -52,7 +53,7 @@
 .total {
     margin-top: 8px;
     padding-top: 8px;
-    border-top: 1px solid map-get($map: $theme-colors, $key: 'primary_light_04');
+    border-top: 1px solid map-get($map: $theme-colors, $key: "primary_light_04");
     .total-title {
         justify-content: space-between;
         .amount-gas-fee {
@@ -64,7 +65,7 @@
         text-align: right;
         margin-top: 2px;
         .amount {
-            color: map-get($map: $theme-colors, $key: 'primary');
+            color: map-get($map: $theme-colors, $key: "primary");
         }
     }
 }

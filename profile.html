@@ -19,6 +19,33 @@
     <!-- *** MAIN *** //-->
     <main>
       <section class="profile-screen container-extension has-nav-extention">
+        <div class="account-manager-actions">
+          <div class="dropdown">
+            <button class="btn-account-manager-actions dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i></button>
+            <div class="dropdown-menu">
+              <button class="dropdown-item" data-toggle="modal" data-target="#renameWallet">
+                <div class="icon"><i class="far fa-pen"></i></div>
+                <div class="text">Rename Wallet</div>
+              </button>
+              <button class="dropdown-item" data-toggle="modal" data-target="#viewSecretPhrases">
+                <div class="icon"><i class="fas fa-eye"></i></div>
+                <div class="text">View Secret phrases</div>
+              </button>
+              <button class="dropdown-item" data-toggle="modal" data-target="#backupWallet">
+                <div class="icon"><i class="fas fa-arrow-alt-to-bottom"></i></div>
+                <div class="text">Back up</div>
+              </button>
+              <button class="dropdown-item" data-toggle="modal" data-target="#deleteBackupWallet">
+                <div class="icon"><i class="far fa-arrow-to-bottom"></i></div>
+                <div class="text">Delete Wallet</div>
+              </button>
+              <button class="dropdown-item" data-toggle="modal" data-target="#confirmLogout">
+                <div class="icon"><i class="far fa-sign-out"></i></div>
+                <div class="text">Log Out</div>
+              </button>
+            </div>
+          </div>
+        </div>
         <div class="header-extension"><a class="logo" href="index.html"><img src="./images/logo_white.png" alt="Prism"/></a></div>
         <div class="body-extension">
           <div class="wallets">

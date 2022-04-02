@@ -10,6 +10,31 @@ block css
     link(rel="stylesheet", href="./css/home.css")
 block main
     section.home-screen.container-extension.has-nav-extention
+        .account-manager-actions
+            .dropdown
+                button.btn-account-manager-actions.dropdown-toggle(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                    i.fas.fa-bars
+                .dropdown-menu
+                    button.dropdown-item(data-toggle="modal" data-target="#renameWallet")
+                        .icon
+                            i.far.fa-pen
+                        .text Rename Wallet
+                    button.dropdown-item(data-toggle="modal" data-target="#viewSecretPhrases")
+                        .icon
+                            i.fas.fa-eye
+                        .text View Secret phrases
+                    button.dropdown-item(data-toggle="modal" data-target="#backupWallet")
+                        .icon
+                            i.fas.fa-arrow-alt-to-bottom
+                        .text Back up
+                    button.dropdown-item(data-toggle="modal" data-target="#deleteBackupWallet")
+                        .icon
+                            i.far.fa-arrow-to-bottom
+                        .text Delete Wallet
+                    button.dropdown-item(data-toggle="modal" data-target="#confirmLogout")
+                        .icon
+                            i.far.fa-sign-out
+                        .text Log Out
         .header-extension
             a.logo(href="index.html")
                 img(src="./images/logo_white.png", alt="Prism")
@@ -113,7 +138,7 @@ block main
                                     .icon
                                         i.far.fa-pen
                                     .text Rename Wallet
-                                button.dropdown-item(data-toggle="modal" data-target="#renameWallet")
+                                button.dropdown-item(data-toggle="modal" data-target="#viewSecretPhrases")
                                     .icon
                                         i.fas.fa-eye
                                     .text View Secret phrases
@@ -151,7 +176,7 @@ block main
                                     .icon
                                         i.far.fa-pen
                                     .text Rename Wallet
-                                button.dropdown-item(data-toggle="modal" data-target="#renameWallet")
+                                button.dropdown-item(data-toggle="modal" data-target="#viewSecretPhrases")
                                     .icon
                                         i.fas.fa-eye
                                     .text View Secret phrases
@@ -189,7 +214,7 @@ block main
                                     .icon
                                         i.far.fa-pen
                                     .text Rename Wallet
-                                button.dropdown-item(data-toggle="modal" data-target="#renameWallet")
+                                button.dropdown-item(data-toggle="modal" data-target="#viewSecretPhrases")
                                     .icon
                                         i.fas.fa-eye
                                     .text View Secret phrases
@@ -227,7 +252,7 @@ block main
                                     .icon
                                         i.far.fa-pen
                                     .text Rename Wallet
-                                button.dropdown-item(data-toggle="modal" data-target="#renameWallet")
+                                button.dropdown-item(data-toggle="modal" data-target="#viewSecretPhrases")
                                     .icon
                                         i.fas.fa-eye
                                     .text View Secret phrases
