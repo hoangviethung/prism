@@ -32,5 +32,11 @@ $(document).ready(function() {
         e.preventDefault();
         setItemLocal('authentication', false);
         window.location.replace('/index.html');
+    })
+
+    $('#claim-token').on('click', function(e) {
+        e.preventDefault();
+        setItemLocal('authentication', true);
+        window.location.replace('/claim-token-with-gas.html');
     });
 });

@@ -73,6 +73,18 @@
     }
 }
 
+.full-page {
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-color: #ffffff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: url('/images/background-extention-fullpage.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
 .container {
     position: relative;
     max-width: 640px;

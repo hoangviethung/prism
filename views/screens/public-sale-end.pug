@@ -1,0 +1,17 @@
+extends ../layouts/layout
+
+block var
+    - bodyClass = "public-sale-end"
+    - pageTitle = "Public Sale End"
+block css
+    link(rel="stylesheet", href="./css/public-sale-end.css")
+block js
+block main
+    section.full-page.d-flex.al-c.jc-c
+            .content-public-sale
+                img.public-img(src="/images/logo-black.png", alt="logo")
+                .public-title
+                    p.title.fw-700 $PRISM PUBLIC SALE END!
+                    p.thank.mx-auto Thank you for participating in our public sales. You have accumulated
+                p.amount.fw-700 500 PRISM
+                a#claim-token.claim-btn.mx-auto.btn.btn-block.btn-lg.btn-primary-dark-1 Claim your token
