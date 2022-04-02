@@ -102,6 +102,9 @@
                 flex-wrap: wrap;
                 align-items: center;
                 margin-left: auto;
+                img {
+                    margin-right: 5px;
+                }
                 .percentage {
                     color: map-get($map: $theme-colors, $key: "grey_05");
                     margin-right: 16px;
