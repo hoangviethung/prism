@@ -160,11 +160,6 @@
     grid-gap: 24px;
     grid-template-columns: 1fr 1fr;
     margin-top: 40px;
-    @media (max-width: 575.98px) {
-        grid-template-columns: 1fr;
-        grid-gap: 16px;
-        margin-top: 24px;
-    }
 }
 
 .form-control-action {

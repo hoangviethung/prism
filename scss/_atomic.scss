@@ -29,6 +29,9 @@
 .d-flex {
     display: flex;
 }
+.d-block {
+    display: block;
+}
 .pull-left {
     float: left;
 }
@@ -102,6 +105,30 @@
 .fullsize {
     width: 100%;
     height: 100%;
+}
+.ml-0 {
+    margin-left: 0;
+}
+.mr-0 {
+    margin-right: 0;
+}
+.mt-0 {
+    margin-top: 0;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.mx-0 {
+    @extend .ml-0;
+    @extend .mr-0;
+}
+.my-0 {
+    @extend .mt-0;
+    @extend .mb-0;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
 }
 .pl-0 {
     padding-left: 0;

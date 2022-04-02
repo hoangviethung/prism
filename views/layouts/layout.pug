@@ -2,20 +2,106 @@ block var
 
 <!DOCTYPE html>
 html(lang="en")
-	head
-		// *** META *** //
-		include meta
-		include css
-		// *** CSS CUSTOM PAGE *** //
-		block css
-		// *** FAVICON *** //
-		link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
-		// *** TITLE *** //
-		title #{pageTitle}
-	body(class=`${bodyClass}`)
-		// *** MAIN *** //
-		main
-			block main
-		include js
-		// *** JS CUSTOM PAGE *** //
-		block js
+    head
+        // *** META *** //
+        include meta
+        include css
+        // *** CSS CUSTOM PAGE *** //
+        block css
+        // *** FAVICON *** //
+        link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
+        // *** TITLE *** //
+        title #{pageTitle}
+    body(class=`${bodyClass}`)
+        // *** MAIN *** //
+        main
+            block main
+        // MODAL RENAME WALLET
+        .modal.fade#renameWallet(tabindex="-1" role="dialog" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        .modal-title Rename Wallet
+                        button.modal-button-close(data-dismiss="modal")
+                            i.far.fa-times
+                    .modal-body
+                        form.form-container(action="") 
+                            .form-wrapper.form-auth
+                                .form-control-have-label
+                                    label.form-label Your wallet name
+                                    input.form-control(type="text", name="name" placeholder="Your Wallet Name")
+                    .modal-footer
+                        .form-group-buttons-2
+                            button.btn.btn-block.btn-lg.btn-outline-primary-dark-1(data-dismiss="modal") Back
+                            button.btn.btn-block.btn-lg.btn-primary-dark-1 Next
+        // MODAL RENAME ACCOUNT
+        .modal.fade#renameAccount(tabindex="-1" role="dialog" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        .modal-title Rename Account
+                        button.modal-button-close(data-dismiss="modal")
+                            i.far.fa-times
+                    .modal-body
+                        form.form-container(action="") 
+                            .form-wrapper.form-auth
+                                .form-control-have-label
+                                    label.form-label Account name
+                                    input.form-control(type="text", name="name" placeholder="Your Account Name")
+                    .modal-footer
+                        .form-group-buttons-2
+                            button.btn.btn-block.btn-lg.btn-outline-primary-dark-1(data-dismiss="modal") Back
+                            button.btn.btn-block.btn-lg.btn-primary-dark-1 Next
+        // BACKUP WALLET
+        .modal.fade#backupWallet(tabindex="-1" role="dialog" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        .modal-title Backup Wallet
+                        button.modal-button-close(data-dismiss="modal")
+                            i.far.fa-times
+                    .modal-body
+                        form.form-container(action="") 
+                            .form-wrapper.form-auth
+                                .form-control-have-label
+                                    label.form-label Enter your password
+                                    input.form-control(type="password", name="password" placeholder="Your Password")
+                    .modal-footer
+                        .form-group-buttons-2
+                            button.btn.btn-block.btn-lg.btn-outline-primary-dark-1(data-dismiss="modal") Back
+                            button.btn.btn-block.btn-lg.btn-primary-dark-1 Next
+        // BACKUP WALLET
+        .modal.fade#successBackupWallet(tabindex="-1" role="dialog" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        .modal-title Successfully backup wallet!
+                        button.modal-button-close(data-dismiss="modal")
+                            i.far.fa-times
+                    .modal-body
+                        img.d-block.mx-auto(src="./images/success-backup-wallet.png", alt="success-backup-wallet")
+                    .modal-footer
+                        button.btn.btn-block.btn-lg.btn-outline-primary-dark-1(data-dismiss="modal") Done
+        // DELETE WALLET
+        .modal.fade#deleteBackupWallet(tabindex="-1" role="dialog" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        .modal-title
+                            i.fas.fa-exclamation-square
+                            span Delete this Wallet
+                        button.modal-button-close(data-dismiss="modal")
+                            i.far.fa-times
+                    .modal-body
+                        form.form-container(action="") 
+                            .form-wrapper.form-auth
+                                .form-control-have-label
+                                    label.form-label Enter your password
+                                    input.form-control(type="password", name="password" placeholder="Your Password")
+                    .modal-footer
+                        .form-group-buttons-2
+                            button.btn.btn-block.btn-lg.btn-outline-primary-dark-1(data-dismiss="modal") Back
+                            button.btn.btn-block.btn-lg.btn-primary-dark-1 Next
+        include js
+        // *** JS CUSTOM PAGE *** //
+        block js
