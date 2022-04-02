@@ -1,0 +1,34 @@
+extends ../layouts/layout
+
+block var
+    - bodyClass = "claim-token-with-gas"
+    - pageTitle = "Claim your token-with-gas"
+block css
+    link(rel="stylesheet", href="./css/claim-token.css")
+block js
+block main
+    section.container-extension.has-nav-extention.has-action-button
+        .header-extension
+            a(href="registration-completed.html").btn.btn-sm.btn-link-light.btn-back
+                i.fa.fa-angle-left
+                span Back
+            img.logo(src="/images/logo_white.png", alt="Prism")
+        .body-extension.body-claim-token
+            .header-claim-token.d-flex
+                .claim-from.d-flex.al-c
+                    img(src="/images/ethereum-icon.png", alt="ether")
+                    p Ethereum
+                .claim-to.d-flex.al-c
+                    img.arr(src="/images/arrow-right.png", alt="arrow-right")
+                    img.avatar(src="/images/avatar.png", alt="avatar")
+                    p.address 0xdhkhdf....1929
+            .with-draw
+                p.fw-700.draw-title Withdraw
+                span.fw-700.amount-draw 0
+            .detail-claim-token
+                include ../layouts/detail-claim
+                
+        .form-control-action.d-flex.position-center-bottom
+            a.btn.btn-block.btn-lg.btn-outline-primary(href="") Reject
+            a.btn.btn-block.btn-lg.btn-primary-dark-1(href="claim-success.html") Confirm
+        include ../layouts/nav

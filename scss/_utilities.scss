@@ -171,6 +171,9 @@
         user-select: none;
         border-bottom: 3px solid transparent;
         transition: 0.3s all ease-in-out;
+        &.tab-claim {
+            max-width: 80px;
+        }
         &:hover {
             color: darken(
                 $color: map-get($map: $theme-colors, $key: "grey_05"),
@@ -179,6 +182,7 @@
         }
         &.active {
             border-color: map-get($map: $theme-colors, $key: "primary");
+            color: map-get($map: $theme-colors, $key: "grey_07");
         }
     }
     &:after {

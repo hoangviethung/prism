@@ -1,0 +1,69 @@
+.tabs-extension-container {
+    margin-top: 16px !important;
+    position: unset;
+}
+
+.gas-fee {
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.claim-amount {
+    text-align: right;
+    margin-top: 2px;
+}
+
+.amount {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    margin-bottom: 2px;
+}
+
+.no-rate {
+    font-size: 12px;
+    line-height: 16px;
+    color: map-get($map: $theme-colors, $key: 'grey_05');
+}
+
+.gas {
+    display: flex;
+    margin-top: 16px;
+    .gas-price {
+        margin-right: 16px;
+    }
+    .gas-price, .gas-limit {
+        .label {
+            margin-bottom: 3px;
+        }
+        input {
+            min-width: 150px;
+            padding: 8px;
+            border: 1px solid map-get($map: $theme-colors, $key: 'grey_02');
+            border-radius: 8px;
+            font-size: 12px;
+            line-height: 16px;
+            max-height: 32px;
+        }
+    }
+}
+
+.total {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid map-get($map: $theme-colors, $key: 'primary_light_04');
+    .total-title {
+        justify-content: space-between;
+        .amount-gas-fee {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+    .total-amount {
+        text-align: right;
+        margin-top: 2px;
+        .amount {
+            color: map-get($map: $theme-colors, $key: 'primary');
+        }
+    }
+}
