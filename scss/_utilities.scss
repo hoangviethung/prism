@@ -181,4 +181,13 @@
             border-color: map-get($map: $theme-colors, $key: "primary");
         }
     }
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -16px;
+        height: 16px;
+        background-color: inherit;
+    }
 }

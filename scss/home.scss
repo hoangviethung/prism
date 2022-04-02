@@ -109,4 +109,25 @@
             }
         }
     }
+    .button-add-block {
+        position: sticky;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .btn-add-coin {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border: 0;
+        border-radius: 8px;
+    }
 }
