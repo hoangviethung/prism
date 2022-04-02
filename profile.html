@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- *** META *** //-->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- *** RUN BEFORE DOM *** //-->
+    <!-- *** CSS MAIN *** //-->
+    <link rel="stylesheet" href="./css/main.css"/>
+    <!-- *** CSS CUSTOM PAGE *** //-->
+    <link rel="stylesheet" href="./css/profile.css"/>
+    <!-- *** FAVICON *** //-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <!-- *** TITLE *** //-->
+    <title>Prism | Profile Page</title>
+  </head>
+  <body class="profile-page">
+    <!-- *** MAIN *** //-->
+    <main>
+      <section class="profile-screen container-extension has-nav-extention">
+        <div class="header-extension"><a class="logo" href="index.html"><img src="./images/logo_white.png" alt="Prism"/></a></div>
+        <div class="body-extension">
+          <div class="wallets">
+            <div class="select-wallet"><i class="far fa-wallet"></i>
+              <div class="dropdown">
+                <div class="wallet-item-active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Wallet 1</div>
+                <div class="dropdown-menu">
+                  <button class="dropdown-item">
+                    <div class="wallet__name">Wallet 1</div>
+                    <div class="wallet__info">
+                      <p class="info__item">$0,00 USD</p>
+                      <p class="info__item">3 Accounts</p>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="option-panel-wallet">
+              <div class="dropdown">
+                <button class="btn-option-panel-wallet" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fal fa-ellipsis-h-alt"></i></button>
+                <div class="dropdown-menu">
+                  <button class="dropdown-item" data-toggle="modal" data-target="#renameWallet">
+                    <div class="icon"><i class="far fa-pen"></i></div>
+                    <div class="text">Rename Wallet</div>
+                  </button>
+                  <button class="dropdown-item" data-toggle="modal" data-target="#renameWallet">
+                    <div class="icon"><i class="fas fa-eye"></i></div>
+                    <div class="text">View Secret phrases</div>
+                  </button>
+                  <button class="dropdown-item" data-toggle="modal" data-target="#backupWallet">
+                    <div class="icon"><i class="fas fa-arrow-alt-to-bottom"></i></div>
+                    <div class="text">Back up</div>
+                  </button>
+                  <button class="dropdown-item" data-toggle="modal" data-target="#deleteBackupWallet">
+                    <div class="icon"><i class="far fa-arrow-to-bottom"></i></div>
+                    <div class="text">Delete Wallet</div>
+                  </button>
+                  <button class="dropdown-item" data-toggle="modal" data-target="#confirmLogout">
+                    <div class="icon"><i class="far fa-sign-out"></i></div>
+                    <div class="text">Log Out</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="actions-main-wallet">
+            <button class="action__item"><i class="fas fa-plus"></i><span>Create new account</span></button>
+            <button class="action__item"><i class="fas fa-file-download"></i><span>Restore account</span></button>
+          </div>
+          <div class="accounts">
+            <div class="account__item">
+              <div class="item__content-main">
+                <div class="account__name">Account 1</div>
+                <div class="account__info">
+                  <div class="info__item">$123.4</div>
+                  <div class="info__item">23 NFT</div>
+                </div>
+                <div class="account__actions">
+                  <div class="action__item">
+                    <div class="dropdown">
+                      <button class="btn-option-panel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu">
+                        <button class="dropdown-item" data-toggle="modal" data-target="#renameWallet">
+                          <div class="icon"><i class="far fa-pen"></i></div>
+                          <div class="text">Rename Wallet</div>
+                        </button>
+                        <button class="dropdown-item" data-toggle="modal" data-target="#renameWallet">
+                          <div class="icon"><i class="fas fa-eye"></i></div>
+                          <div class="text">View Secret phrases</div>
+                        </button>
+                        <button class="dropdown-item" data-toggle="modal" data-target="#backupWallet">
+                          <div class="icon"><i class="fas fa-arrow-alt-to-bottom"></i></div>
+                          <div class="text">Back up</div>
+                        </button>
+                        <button class="dropdown-item" data-toggle="modal" data-target="#deleteBackupWallet">
+                          <div class="icon"><i class="far fa-arrow-to-bottom"></i></div>
+                          <div class="text">Delete Wallet</div>
+                        </button>
+                        <button class="dropdown-item" data-toggle="modal" data-target="#confirmLogout">
+                          <div class="icon"><i class="far fa-sign-out"></i></div>
+                          <div class="text">Log Out</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="action__item">
+                    <button class="btn-show-more"><i class="far fa-angle-down"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__content-detail">
+                <div class="detail__item">
+                  <div class="item__desc">
+                    <div class="icon"><img src="./images/ethereum-icon.png" alt="ethereum"/></div>
+                    <div class="info">
+                      <p class="name-token">Ethereum</p>
+                      <p class="address-token">0xdhkhdkjahdkadSjjdsnjndj....1929chjk9</p>
+                    </div>
+                  </div>
+                  <div class="item__actions">
+                    <button class="btn-copy"><i class="far fa-copy"></i></button>
+                  </div>
+                </div>
+                <div class="detail__item">
+                  <div class="item__desc">
+                    <div class="icon"><img src="./images/bitcoin-icon.png" alt="bitcoin"/></div>
+                    <div class="info">
+                      <p class="name-token">Bitcoin</p>
+                      <p class="address-token">0xdhkhdkjahdkadSjjdsnjndj....1929chjk9</p>
+                    </div>
+                  </div>
+                  <div class="item__actions">
+                    <button class="btn-copy"><i class="far fa-copy"></i></button>
+                  </div>
+                </div>
+                <div class="detail__item">
+                  <div class="item__desc">
+                    <div class="icon"><img src="./images/avalanche-icon.png" alt="avalanche"/></div>
+                    <div class="info">
+                      <p class="name-token">Avalanche</p>
+                      <p class="address-token">0xdhkhdkjahdkadSjjdsnjndj....1929chjk9</p>
+                    </div>
+                  </div>
+                  <div class="item__actions">
+                    <button class="btn-copy"><i class="far fa-copy"></i></button>
+                  </div>
+                </div>
+                <div class="detail__item">
+                  <div class="item__desc">
+                    <div class="icon"><img src="./images/binance-icon.png" alt="binance"/></div>
+                    <div class="info">
+                      <p class="name-token">Binance</p>
+                      <p class="address-token">0xdhkhdkjahdkadSjjdsnjndj....1929chjk9</p>
+                    </div>
+                  </div>
+                  <div class="item__actions">
+                    <button class="btn-copy"><i class="far fa-copy"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="account__item">
+              <div class="item__content-main">
+                <div class="account__name">Account 2</div>
+                <div class="account__info">
+                  <div class="info__item">$123.4</div>
+                  <div class="info__item">23 NFT</div>
+                </div>
+                <div class="account__actions">
+                  <div class="action__item">
+                    <div class="dropdown">
+                      <button class="btn-option-panel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu">
+                        <button class="dropdown-item" data-toggle="modal" data-target="#renameWallet">
+                          <div class="icon"><i class="far fa-pen"></i></div>
+                          <div class="text">Rename Wallet</div>
+                        </button>
+                        <button class="dropdown-item" data-toggle="modal" data-target="#renameWallet">
+                          <div class="icon"><i class="fas fa-eye"></i></div>
+                          <div class="text">View Secret phrases</div>
+                        </button>
+                        <button class="dropdown-item" data-toggle="modal" data-target="#backupWallet">
+                          <div class="icon"><i class="fas fa-arrow-alt-to-bottom"></i></div>
+                          <div class="text">Back up</div>
+                        </button>
+                        <button class="dropdown-item" data-toggle="modal" data-target="#deleteBackupWallet">
+                          <div class="icon"><i class="far fa-arrow-to-bottom"></i></div>
+                          <div class="text">Delete Wallet</div>
+                        </button>
+                        <button class="dropdown-item" data-toggle="modal" data-target="#confirmLogout">
+                          <div class="icon"><i class="far fa-sign-out"></i></div>
+                          <div class="text">Log Out</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="action__item">
+                    <button class="btn-show-more"><i class="far fa-angle-down"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="item__content-detail">
+                <div class="detail__item">
+                  <div class="item__desc">
+                    <div class="icon"><img src="./images/ethereum-icon.png" alt="ethereum"/></div>
+                    <div class="info">
+                      <p class="name-token">Ethereum</p>
+                      <p class="address-token">0xdhkhdkjahdkadSjjdsnjndj....1929chjk9</p>
+                    </div>
+                  </div>
+                  <div class="item__actions">
+                    <button class="btn-copy"><i class="far fa-copy"></i></button>
+                  </div>
+                </div>
+                <div class="detail__item">
+                  <div class="item__desc">
+                    <div class="icon"><img src="./images/bitcoin-icon.png" alt="bitcoin"/></div>
+                    <div class="info">
+                      <p class="name-token">Bitcoin</p>
+                      <p class="address-token">0xdhkhdkjahdkadSjjdsnjndj....1929chjk9</p>
+                    </div>
+                  </div>
+                  <div class="item__actions">
+                    <button class="btn-copy"><i class="far fa-copy"></i></button>
+                  </div>
+                </div>
+                <div class="detail__item">
+                  <div class="item__desc">
+                    <div class="icon"><img src="./images/avalanche-icon.png" alt="avalanche"/></div>
+                    <div class="info">
+                      <p class="name-token">Avalanche</p>
+                      <p class="address-token">0xdhkhdkjahdkadSjjdsnjndj....1929chjk9</p>
+                    </div>
+                  </div>
+                  <div class="item__actions">
+                    <button class="btn-copy"><i class="far fa-copy"></i></button>
+                  </div>
+                </div>
+                <div class="detail__item">
+                  <div class="item__desc">
+                    <div class="icon"><img src="./images/binance-icon.png" alt="binance"/></div>
+                    <div class="info">
+                      <p class="name-token">Binance</p>
+                      <p class="address-token">0xdhkhdkjahdkadSjjdsnjndj....1929chjk9</p>
+                    </div>
+                  </div>
+                  <div class="item__actions">
+                    <button class="btn-copy"><i class="far fa-copy"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="nav-extension">
+          <div class="nav-list"><a class="nav__item" href="home.html"><i class="far fa-home-alt"></i></a><a class="nav__item" href="#"><i class="far fa-comment-alt-lines"></i></a><a class="nav__item" href="#"><i class="far fa-exchange"></i></a><a class="nav__item" href="#"><i class="far fa-clock"></i></a><a class="nav__item active" href="profile.html"><i class="far fa-user-circle"></i></a></div>
+        </nav>
+      </section>
+    </main>
+    <!-- MODAL RENAME WALLET-->
+    <div class="modal fade" id="renameWallet" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">Rename Wallet</div>
+            <button class="modal-button-close" data-dismiss="modal"><i class="far fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+            <form class="form-container" action="">
+              <div class="form-wrapper form-auth">
+                <div class="form-control-have-label">
+                  <label class="form-label">Your wallet name</label>
+                  <input class="form-control" type="text" name="name" placeholder="Your Wallet Name"/>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="form-group-buttons-2">
+              <button class="btn btn-block btn-lg btn-outline-primary-dark-1" data-dismiss="modal">Back</button>
+              <button class="btn btn-block btn-lg btn-primary-dark-1">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL RENAME ACCOUNT-->
+    <div class="modal fade" id="renameAccount" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">Rename Account</div>
+            <button class="modal-button-close" data-dismiss="modal"><i class="far fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+            <form class="form-container" action="">
+              <div class="form-wrapper form-auth">
+                <div class="form-control-have-label">
+                  <label class="form-label">Account name</label>
+                  <input class="form-control" type="text" name="name" placeholder="Your Account Name"/>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="form-group-buttons-2">
+              <button class="btn btn-block btn-lg btn-outline-primary-dark-1" data-dismiss="modal">Back</button>
+              <button class="btn btn-block btn-lg btn-primary-dark-1">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BACKUP WALLET-->
+    <div class="modal fade" id="backupWallet" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">Backup Wallet</div>
+            <button class="modal-button-close" data-dismiss="modal"><i class="far fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+            <form class="form-container" action="">
+              <div class="form-wrapper form-auth">
+                <div class="form-control-have-label">
+                  <label class="form-label">Enter your password</label>
+                  <input class="form-control" type="password" name="password" placeholder="Your Password"/>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="form-group-buttons-2">
+              <button class="btn btn-block btn-lg btn-outline-primary-dark-1" data-dismiss="modal">Back</button>
+              <button class="btn btn-block btn-lg btn-primary-dark-1">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BACKUP WALLET SUCCESSFULLY-->
+    <div class="modal fade" id="successBackupWallet" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">Successfully backup wallet!</div>
+            <button class="modal-button-close" data-dismiss="modal"><i class="far fa-times"></i></button>
+          </div>
+          <div class="modal-body"><img class="d-block mx-auto" src="./images/success-backup-wallet.png" alt="success-backup-wallet"/></div>
+          <div class="modal-footer">
+            <button class="btn btn-block btn-lg btn-outline-primary-dark-1" data-dismiss="modal">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- DELETE WALLET-->
+    <div class="modal fade" id="deleteBackupWallet" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title"><i class="fas fa-exclamation-square"></i><span>Delete this Wallet</span></div>
+            <button class="modal-button-close" data-dismiss="modal"><i class="far fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+            <form class="form-container" action="">
+              <div class="form-wrapper form-auth">
+                <div class="form-control-have-label">
+                  <label class="form-label">Enter your password</label>
+                  <input class="form-control" type="password" name="password" placeholder="Your Password"/>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="form-group-buttons-2">
+              <button class="btn btn-block btn-lg btn-outline-primary-dark-1" data-dismiss="modal">Back</button>
+              <button class="btn btn-block btn-lg btn-primary-dark-1">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- VIEW SECRET PHRASES-->
+    <div class="modal fade" id="viewSecretPhrases" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">View Secrect Phrases</div>
+            <button class="modal-button-close" data-dismiss="modal"><i class="far fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+            <form class="form-container" action="">
+              <div class="form-wrapper form-auth">
+                <div class="form-control-have-label">
+                  <label class="form-label">Enter your password</label>
+                  <input class="form-control" type="password" name="password" placeholder="Your Password"/>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="form-group-buttons-2">
+              <button class="btn btn-block btn-lg btn-outline-primary-dark-1" data-dismiss="modal">Back</button>
+              <button class="btn btn-block btn-lg btn-primary-dark-1">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- VIEW SECRET PHRASES-->
+    <div class="modal fade" id="copySecretPhrases" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">View Secrect Phrases</div>
+            <button class="modal-button-close" data-dismiss="modal"><i class="far fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+            <div class="secret-phrases">
+              <div class="secret-phrases__item">release</div>
+              <div class="secret-phrases__item">rose</div>
+              <div class="secret-phrases__item">update</div>
+              <div class="secret-phrases__item">void</div>
+              <div class="secret-phrases__item">accident</div>
+              <div class="secret-phrases__item">coil</div>
+              <div class="secret-phrases__item">dove</div>
+              <div class="secret-phrases__item">glass</div>
+              <div class="secret-phrases__item">humor</div>
+              <div class="secret-phrases__item">need</div>
+              <div class="secret-phrases__item">peanut</div>
+              <div class="secret-phrases__item">rabit</div>
+            </div>
+            <div class="group-button-action">
+              <button class="btn btn-sm btn-link button-copy-secret-phrases"><i class="fa fa-solid fa-copy"></i><span>Copy secret phrases</span></button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-block btn-lg btn-primary-dark-1" data-dismiss="modal">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONFIRM LOGOUT-->
+    <div class="modal fade" id="confirmLogout" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">Logout Your Account</div>
+          </div>
+          <div class="modal-body"><img class="d-block mx-auto" src="./images/confirm-logout.png" alt="confirm-logout"/></div>
+          <div class="modal-footer">
+            <div class="form-group-buttons-2">
+              <button class="btn btn-block btn-lg btn-outline-primary-dark-1" id="sign-out">Logout</button>
+              <button class="btn btn-block btn-lg btn-primary-dark-1" data-dismiss="modal">Back</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *** LIBRAIES JS *** //-->
+    <script src="./libraries/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./libraries/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- *** MAIN JS *** //-->
+    <script src="./js/main.js"></script>
+    <!-- *** JS CUSTOM PAGE *** //-->
+    <script src="./js/profile.js"> </script>
+  </body>
+</html>

@@ -1,12 +1,25 @@
 nav.nav-extension
-    .nav-list
-        a(href="#").nav__item
-            i.far.fa-home-alt
-        a(href="#").nav__item
-            i.far.fa-comment-alt-lines
-        a(href="#").nav__item
-            i.far.fa-exchange
-        a(href="#").nav__item
-            i.far.fa-clock
-        a(href="#").nav__item.active
-            i.far.fa-user-circle
+    if navActive === "home"
+        .nav-list
+            a.nav__item.active(href="home.html")
+                i.far.fa-home-alt
+            a.nav__item(href="#")
+                i.far.fa-comment-alt-lines
+            a.nav__item(href="#")
+                i.far.fa-exchange
+            a.nav__item(href="#")
+                i.far.fa-clock
+            a.nav__item(href="profile.html")
+                i.far.fa-user-circle
+    if navActive === "profile"
+        .nav-list
+            a.nav__item(href="home.html")
+                i.far.fa-home-alt
+            a.nav__item(href="#")
+                i.far.fa-comment-alt-lines
+            a.nav__item(href="#")
+                i.far.fa-exchange
+            a.nav__item(href="#")
+                i.far.fa-clock
+            a.nav__item.active(href="profile.html")
+                i.far.fa-user-circle

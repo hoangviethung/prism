@@ -1,0 +1,213 @@
+extends ../layouts/layout
+
+block var
+    - bodyClass = "profile-page"
+    - pageTitle = "Prism | Profile Page"
+    - navActive = "profile"
+block css
+    link(rel="stylesheet", href="./css/profile.css")
+block js
+    script(src="./js/profile.js") 
+block main
+    section.profile-screen.container-extension.has-nav-extention
+        .header-extension
+            a.logo(href="index.html")
+                img(src="./images/logo_white.png", alt="Prism")
+        .body-extension
+            .wallets
+                .select-wallet
+                    i.far.fa-wallet
+                    .dropdown
+                        .wallet-item-active(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Wallet 1
+                        .dropdown-menu
+                            button.dropdown-item
+                                .wallet__name Wallet 1
+                                .wallet__info
+                                    p.info__item $0,00 USD
+                                    p.info__item 3 Accounts
+                .option-panel-wallet
+                    .dropdown
+                        button.btn-option-panel-wallet(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                            i.fal.fa-ellipsis-h-alt
+                        .dropdown-menu
+                            button.dropdown-item(data-toggle="modal" data-target="#renameWallet")
+                                .icon
+                                    i.far.fa-pen
+                                .text Rename Wallet
+                            button.dropdown-item(data-toggle="modal" data-target="#renameWallet")
+                                .icon
+                                    i.fas.fa-eye
+                                .text View Secret phrases
+                            button.dropdown-item(data-toggle="modal" data-target="#backupWallet")
+                                .icon
+                                    i.fas.fa-arrow-alt-to-bottom
+                                .text Back up
+                            button.dropdown-item(data-toggle="modal" data-target="#deleteBackupWallet")
+                                .icon
+                                    i.far.fa-arrow-to-bottom
+                                .text Delete Wallet
+                            button.dropdown-item(data-toggle="modal" data-target="#confirmLogout")
+                                .icon
+                                    i.far.fa-sign-out
+                                .text Log Out
+            .actions-main-wallet
+                button.action__item
+                    i.fas.fa-plus
+                    span Create new account
+                button.action__item
+                    i.fas.fa-file-download
+                    span Restore account
+            .accounts
+                .account__item
+                    .item__content-main
+                        .account__name Account 1
+                        .account__info
+                            .info__item $123.4
+                            .info__item 23 NFT
+                        .account__actions
+                            .action__item
+                                .dropdown
+                                    button.btn-option-panel(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                                        i.far.fa-ellipsis-h
+                                    .dropdown-menu
+                                        button.dropdown-item(data-toggle="modal" data-target="#renameWallet")
+                                            .icon
+                                                i.far.fa-pen
+                                            .text Rename Wallet
+                                        button.dropdown-item(data-toggle="modal" data-target="#renameWallet")
+                                            .icon
+                                                i.fas.fa-eye
+                                            .text View Secret phrases
+                                        button.dropdown-item(data-toggle="modal" data-target="#backupWallet")
+                                            .icon
+                                                i.fas.fa-arrow-alt-to-bottom
+                                            .text Back up
+                                        button.dropdown-item(data-toggle="modal" data-target="#deleteBackupWallet")
+                                            .icon
+                                                i.far.fa-arrow-to-bottom
+                                            .text Delete Wallet
+                                        button.dropdown-item(data-toggle="modal" data-target="#confirmLogout")
+                                            .icon
+                                                i.far.fa-sign-out
+                                            .text Log Out
+                            .action__item
+                                button.btn-show-more
+                                    i.far.fa-angle-down
+                    .item__content-detail
+                        .detail__item
+                            .item__desc
+                                .icon
+                                    img(src="./images/ethereum-icon.png", alt="ethereum")
+                                .info
+                                    p.name-token Ethereum
+                                    p.address-token 0xdhkhdkjahdkadSjjdsnjndj....1929chjk9
+                            .item__actions
+                                button.btn-copy
+                                    i.far.fa-copy
+                        .detail__item
+                            .item__desc
+                                .icon
+                                    img(src="./images/bitcoin-icon.png", alt="bitcoin")
+                                .info
+                                    p.name-token Bitcoin
+                                    p.address-token 0xdhkhdkjahdkadSjjdsnjndj....1929chjk9
+                            .item__actions
+                                button.btn-copy
+                                    i.far.fa-copy
+                        .detail__item
+                            .item__desc
+                                .icon
+                                    img(src="./images/avalanche-icon.png", alt="avalanche")
+                                .info
+                                    p.name-token Avalanche
+                                    p.address-token 0xdhkhdkjahdkadSjjdsnjndj....1929chjk9
+                            .item__actions
+                                button.btn-copy
+                                    i.far.fa-copy
+                        .detail__item
+                            .item__desc
+                                .icon
+                                    img(src="./images/binance-icon.png", alt="binance")
+                                .info
+                                    p.name-token Binance
+                                    p.address-token 0xdhkhdkjahdkadSjjdsnjndj....1929chjk9
+                            .item__actions
+                                button.btn-copy
+                                    i.far.fa-copy
+                .account__item
+                    .item__content-main
+                        .account__name Account 2
+                        .account__info
+                            .info__item $123.4
+                            .info__item 23 NFT
+                        .account__actions
+                            .action__item
+                                .dropdown
+                                    button.btn-option-panel(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                                        i.far.fa-ellipsis-h
+                                    .dropdown-menu
+                                        button.dropdown-item(data-toggle="modal" data-target="#renameWallet")
+                                            .icon
+                                                i.far.fa-pen
+                                            .text Rename Wallet
+                                        button.dropdown-item(data-toggle="modal" data-target="#renameWallet")
+                                            .icon
+                                                i.fas.fa-eye
+                                            .text View Secret phrases
+                                        button.dropdown-item(data-toggle="modal" data-target="#backupWallet")
+                                            .icon
+                                                i.fas.fa-arrow-alt-to-bottom
+                                            .text Back up
+                                        button.dropdown-item(data-toggle="modal" data-target="#deleteBackupWallet")
+                                            .icon
+                                                i.far.fa-arrow-to-bottom
+                                            .text Delete Wallet
+                                        button.dropdown-item(data-toggle="modal" data-target="#confirmLogout")
+                                            .icon
+                                                i.far.fa-sign-out
+                                            .text Log Out
+                            .action__item
+                                button.btn-show-more
+                                    i.far.fa-angle-down
+                    .item__content-detail
+                        .detail__item
+                            .item__desc
+                                .icon
+                                    img(src="./images/ethereum-icon.png", alt="ethereum")
+                                .info
+                                    p.name-token Ethereum
+                                    p.address-token 0xdhkhdkjahdkadSjjdsnjndj....1929chjk9
+                            .item__actions
+                                button.btn-copy
+                                    i.far.fa-copy
+                        .detail__item
+                            .item__desc
+                                .icon
+                                    img(src="./images/bitcoin-icon.png", alt="bitcoin")
+                                .info
+                                    p.name-token Bitcoin
+                                    p.address-token 0xdhkhdkjahdkadSjjdsnjndj....1929chjk9
+                            .item__actions
+                                button.btn-copy
+                                    i.far.fa-copy
+                        .detail__item
+                            .item__desc
+                                .icon
+                                    img(src="./images/avalanche-icon.png", alt="avalanche")
+                                .info
+                                    p.name-token Avalanche
+                                    p.address-token 0xdhkhdkjahdkadSjjdsnjndj....1929chjk9
+                            .item__actions
+                                button.btn-copy
+                                    i.far.fa-copy
+                        .detail__item
+                            .item__desc
+                                .icon
+                                    img(src="./images/binance-icon.png", alt="binance")
+                                .info
+                                    p.name-token Binance
+                                    p.address-token 0xdhkhdkjahdkadSjjdsnjndj....1929chjk9
+                            .item__actions
+                                button.btn-copy
+                                    i.far.fa-copy
+        include ../layouts/nav
