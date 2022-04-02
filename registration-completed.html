@@ -26,7 +26,7 @@
             <div class="content-registration-completed">
               <h2 class="second-title-screen fw-700">Welcome to Prism</h2><img src="/images/welcome-registration.png" alt="Welcome-Registration"/>
             </div>
-            <div class="form-control-action position-center-bottom"><a class="btn btn-block btn-lg btn-primary-dark-1" href="what-new.html">To your wallet</a></div>
+            <div class="form-control-action position-center-bottom"><a class="btn btn-block btn-lg btn-primary-dark-1" id="to-wallet">To your wallet</a></div>
           </div>
         </div>
       </section>
@@ -79,7 +79,7 @@
           <div class="modal-footer">
             <div class="form-group-buttons-2">
               <button class="btn btn-block btn-lg btn-outline-primary-dark-1" data-dismiss="modal">Back</button>
-              <button class="btn btn-block btn-lg btn-primary-dark-1">Next</button>
+              <button class="btn btn-block btn-lg btn-primary-dark-1" data-dismiss="modal">Next</button>
             </div>
           </div>
         </div>
@@ -100,13 +100,19 @@
                   <label class="form-label">Enter your password</label>
                   <input class="form-control" type="password" name="password" placeholder="Your Password"/>
                 </div>
+                <label class="form-control-have-label form-check d-flex jc-c">
+                  <div class="form-check-input">
+                    <input type="checkbox"/>
+                  </div>
+                  <div class="form-label">Export with a new password</div>
+                </label>
               </div>
             </form>
           </div>
           <div class="modal-footer">
             <div class="form-group-buttons-2">
               <button class="btn btn-block btn-lg btn-outline-primary-dark-1" data-dismiss="modal">Back</button>
-              <button class="btn btn-block btn-lg btn-primary-dark-1">Next</button>
+              <button class="btn btn-block btn-lg btn-primary-dark-1" data-target="#successBackupWallet" data-toggle="modal" data-dismiss="modal">Next</button>
             </div>
           </div>
         </div>
@@ -148,7 +154,7 @@
           <div class="modal-footer">
             <div class="form-group-buttons-2">
               <button class="btn btn-block btn-lg btn-outline-primary-dark-1" data-dismiss="modal">Back</button>
-              <button class="btn btn-block btn-lg btn-primary-dark-1">Next</button>
+              <button class="btn btn-block btn-lg btn-primary-dark-1" data-dismiss="modal">Next</button>
             </div>
           </div>
         </div>
@@ -175,7 +181,7 @@
           <div class="modal-footer">
             <div class="form-group-buttons-2">
               <button class="btn btn-block btn-lg btn-outline-primary-dark-1" data-dismiss="modal">Back</button>
-              <button class="btn btn-block btn-lg btn-primary-dark-1">Next</button>
+              <button class="btn btn-block btn-lg btn-primary-dark-1" data-toggle="modal" data-dismiss="modal" data-target="#copySecretPhrases">Next</button>
             </div>
           </div>
         </div>

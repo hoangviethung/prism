@@ -36,4 +36,9 @@ $(document).ready(function () {
         setItemLocal("authentication", false);
         window.location.replace("/index.html");
     });
+    $("#to-wallet").on("click", function (e) {
+        e.preventDefault();
+        setItemLocal("authentication", true);
+        window.location.replace("/what-new.html");
+    });
 });

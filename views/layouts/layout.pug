@@ -53,7 +53,7 @@ html(lang="en")
                     .modal-footer
                         .form-group-buttons-2
                             button.btn.btn-block.btn-lg.btn-outline-primary-dark-1(data-dismiss="modal") Back
-                            button.btn.btn-block.btn-lg.btn-primary-dark-1 Next
+                            button.btn.btn-block.btn-lg.btn-primary-dark-1(data-dismiss="modal") Next
         // BACKUP WALLET
         .modal.fade#backupWallet(tabindex="-1" role="dialog" aria-hidden="true")
             .modal-dialog.modal-dialog-centered
@@ -68,10 +68,14 @@ html(lang="en")
                                 .form-control-have-label
                                     label.form-label Enter your password
                                     input.form-control(type="password", name="password" placeholder="Your Password")
+                                label.form-control-have-label.form-check.d-flex.jc-c
+                                    .form-check-input
+                                        input(type="checkbox")
+                                    .form-label Export with a new password
                     .modal-footer
                         .form-group-buttons-2
                             button.btn.btn-block.btn-lg.btn-outline-primary-dark-1(data-dismiss="modal") Back
-                            button.btn.btn-block.btn-lg.btn-primary-dark-1 Next
+                            button.btn.btn-block.btn-lg.btn-primary-dark-1(data-target="#successBackupWallet", data-toggle="modal", data-dismiss="modal") Next
         // BACKUP WALLET SUCCESSFULLY
         .modal.fade#successBackupWallet(tabindex="-1" role="dialog" aria-hidden="true")
             .modal-dialog.modal-dialog-centered
@@ -103,7 +107,7 @@ html(lang="en")
                     .modal-footer
                         .form-group-buttons-2
                             button.btn.btn-block.btn-lg.btn-outline-primary-dark-1(data-dismiss="modal") Back
-                            button.btn.btn-block.btn-lg.btn-primary-dark-1 Next
+                            button.btn.btn-block.btn-lg.btn-primary-dark-1(data-dismiss="modal") Next
         // VIEW SECRET PHRASES
         .modal.fade#viewSecretPhrases(tabindex="-1" role="dialog" aria-hidden="true")
             .modal-dialog.modal-dialog-centered
@@ -121,7 +125,7 @@ html(lang="en")
                     .modal-footer
                         .form-group-buttons-2
                             button.btn.btn-block.btn-lg.btn-outline-primary-dark-1(data-dismiss="modal") Back
-                            button.btn.btn-block.btn-lg.btn-primary-dark-1 Next
+                            button.btn.btn-block.btn-lg.btn-primary-dark-1(data-toggle="modal", data-dismiss="modal", data-target="#copySecretPhrases") Next
         // VIEW SECRET PHRASES
         .modal.fade#copySecretPhrases(tabindex="-1" role="dialog" aria-hidden="true")
             .modal-dialog.modal-dialog-centered
