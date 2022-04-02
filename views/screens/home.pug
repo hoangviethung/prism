@@ -26,11 +26,29 @@ block main
                 .search
                     input.form-control(type="text" placeholder="Search")
                 .filter
-                    .form-select
-                        select(name="")
-                            option(value="#") All Chain
-                            option(value="#") All Chain
-                            option(value="#") All Chain
+                    .dropdown
+                        .filter-item-active(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") All Chain
+                        .dropdown-menu
+                            button.dropdown-item.dropdown-item-selected
+                                .icon-coin
+                                    img(src="./images/bitcoin-icon.png", alt="bitcoin")
+                                .text Bitcoin
+                            button.dropdown-item
+                                .icon-coin
+                                    img(src="./images/ethereum-icon.png", alt="ethereum")
+                                .text Ethereum
+                            button.dropdown-item
+                                .icon-coin
+                                    img(src="./images/polygon-icon.png", alt="polygon")
+                                .text Polygon
+                            button.dropdown-item
+                                .icon-coin
+                                    img(src="./images/binance-icon.png", alt="binance")
+                                .text Binance
+                            button.dropdown-item
+                                .icon-coin
+                                    img(src="./images/avalanche-icon.png", alt="avalanche")
+                                .text Avalanche
             .coins
                 .coin__item
                     .left
@@ -49,11 +67,11 @@ block main
                             button.btn-more.dropdown-toggle(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
                                 i.far.fa-ellipsis-h
                             .dropdown-menu
-                                button.dropdown-item(data-toggle="modal" data-target="#renameWallet")
+                                button.dropdown-item(data-toggle="modal" data-target="#copySecretPhrases")
                                     .icon
                                         i.far.fa-pen
                                     .text Rename Wallet
-                                button.dropdown-item(data-toggle="modal" data-target="#renameWallet")
+                                button.dropdown-item(data-toggle="modal" data-target="#viewSecretPhrases")
                                     .icon
                                         i.fas.fa-eye
                                     .text View Secret phrases
@@ -65,7 +83,7 @@ block main
                                     .icon
                                         i.far.fa-arrow-to-bottom
                                     .text Delete Wallet
-                                button.dropdown-item(data-toggle="modal" data-target="#renameWallet")
+                                button.dropdown-item(data-toggle="modal" data-target="#confirmLogout")
                                     .icon
                                         i.far.fa-sign-out
                                     .text Log Out
@@ -75,8 +93,8 @@ block main
                             img(src="./images/ethereum-icon.png", alt="ethereum")
                         .name
                             h4
-                                span 12
-                                span BTC
+                                span 160
+                                span ETH
                             h3
                                 span $
                                 span 391,402
@@ -102,7 +120,7 @@ block main
                                     .icon
                                         i.far.fa-arrow-to-bottom
                                     .text Delete Wallet
-                                button.dropdown-item(data-toggle="modal" data-target="#renameWallet")
+                                button.dropdown-item(data-toggle="modal" data-target="#confirmLogout")
                                     .icon
                                         i.far.fa-sign-out
                                     .text Log Out
@@ -112,8 +130,8 @@ block main
                             img(src="./images/polygon-icon.png", alt="polygon")
                         .name
                             h4
-                                span 12
-                                span BTC
+                                span 45
+                                span MATIC
                             h3
                                 span $
                                 span 391,402
@@ -139,7 +157,7 @@ block main
                                     .icon
                                         i.far.fa-arrow-to-bottom
                                     .text Delete Wallet
-                                button.dropdown-item(data-toggle="modal" data-target="#renameWallet")
+                                button.dropdown-item(data-toggle="modal" data-target="#confirmLogout")
                                     .icon
                                         i.far.fa-sign-out
                                     .text Log Out
@@ -149,8 +167,8 @@ block main
                             img(src="./images/binance-icon.png", alt="binance")
                         .name
                             h4
-                                span 12
-                                span BTC
+                                span 0
+                                span BNB
                             h3
                                 span $
                                 span 391,402
@@ -176,7 +194,7 @@ block main
                                     .icon
                                         i.far.fa-arrow-to-bottom
                                     .text Delete Wallet
-                                button.dropdown-item(data-toggle="modal" data-target="#renameWallet")
+                                button.dropdown-item(data-toggle="modal" data-target="#confirmLogout")
                                     .icon
                                         i.far.fa-sign-out
                                     .text Log Out
@@ -186,8 +204,8 @@ block main
                             img(src="./images/avalanche-icon.png", alt="avalanche")
                         .name
                             h4
-                                span 12
-                                span BTC
+                                span 0
+                                span AVAX
                             h3
                                 span $
                                 span 391,402
@@ -213,7 +231,7 @@ block main
                                     .icon
                                         i.far.fa-arrow-to-bottom
                                     .text Delete Wallet
-                                button.dropdown-item(data-toggle="modal" data-target="#renameWallet")
+                                button.dropdown-item(data-toggle="modal" data-target="#confirmLogout")
                                     .icon
                                         i.far.fa-sign-out
                                     .text Log Out

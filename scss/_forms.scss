@@ -28,6 +28,15 @@
     }
 }
 
+textarea.form-control {
+    height: 110px;
+    resize: none;
+    /* width */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
 .form-select {
     position: relative;
     select {

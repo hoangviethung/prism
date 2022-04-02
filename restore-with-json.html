@@ -48,7 +48,7 @@
             <button class="modal-button-close" data-dismiss="modal"><i class="far fa-times"></i></button>
           </div>
           <div class="modal-body">
-            <form class="form-container" action=""> 
+            <form class="form-container" action="">
               <div class="form-wrapper form-auth">
                 <div class="form-control-have-label">
                   <label class="form-label">Your wallet name</label>
@@ -75,7 +75,7 @@
             <button class="modal-button-close" data-dismiss="modal"><i class="far fa-times"></i></button>
           </div>
           <div class="modal-body">
-            <form class="form-container" action=""> 
+            <form class="form-container" action="">
               <div class="form-wrapper form-auth">
                 <div class="form-control-have-label">
                   <label class="form-label">Account name</label>
@@ -102,7 +102,7 @@
             <button class="modal-button-close" data-dismiss="modal"><i class="far fa-times"></i></button>
           </div>
           <div class="modal-body">
-            <form class="form-container" action=""> 
+            <form class="form-container" action="">
               <div class="form-wrapper form-auth">
                 <div class="form-control-have-label">
                   <label class="form-label">Enter your password</label>
@@ -120,7 +120,7 @@
         </div>
       </div>
     </div>
-    <!-- BACKUP WALLET-->
+    <!-- BACKUP WALLET SUCCESSFULLY-->
     <div class="modal fade" id="successBackupWallet" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -144,7 +144,7 @@
             <button class="modal-button-close" data-dismiss="modal"><i class="far fa-times"></i></button>
           </div>
           <div class="modal-body">
-            <form class="form-container" action=""> 
+            <form class="form-container" action="">
               <div class="form-wrapper form-auth">
                 <div class="form-control-have-label">
                   <label class="form-label">Enter your password</label>
@@ -157,6 +157,83 @@
             <div class="form-group-buttons-2">
               <button class="btn btn-block btn-lg btn-outline-primary-dark-1" data-dismiss="modal">Back</button>
               <button class="btn btn-block btn-lg btn-primary-dark-1">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- VIEW SECRET PHRASES-->
+    <div class="modal fade" id="viewSecretPhrases" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">View Secrect Phrases</div>
+            <button class="modal-button-close" data-dismiss="modal"><i class="far fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+            <form class="form-container" action="">
+              <div class="form-wrapper form-auth">
+                <div class="form-control-have-label">
+                  <label class="form-label">Enter your password</label>
+                  <input class="form-control" type="password" name="password" placeholder="Your Password"/>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="form-group-buttons-2">
+              <button class="btn btn-block btn-lg btn-outline-primary-dark-1" data-dismiss="modal">Back</button>
+              <button class="btn btn-block btn-lg btn-primary-dark-1">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- VIEW SECRET PHRASES-->
+    <div class="modal fade" id="copySecretPhrases" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">View Secrect Phrases</div>
+            <button class="modal-button-close" data-dismiss="modal"><i class="far fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+            <div class="secret-phrases">
+              <div class="secret-phrases__item">release</div>
+              <div class="secret-phrases__item">rose</div>
+              <div class="secret-phrases__item">update</div>
+              <div class="secret-phrases__item">void</div>
+              <div class="secret-phrases__item">accident</div>
+              <div class="secret-phrases__item">coil</div>
+              <div class="secret-phrases__item">dove</div>
+              <div class="secret-phrases__item">glass</div>
+              <div class="secret-phrases__item">humor</div>
+              <div class="secret-phrases__item">need</div>
+              <div class="secret-phrases__item">peanut</div>
+              <div class="secret-phrases__item">rabit</div>
+            </div>
+            <div class="group-button-action">
+              <button class="btn btn-sm btn-link button-copy-secret-phrases"><i class="fa fa-solid fa-copy"></i><span>Copy secret phrases</span></button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-block btn-lg btn-primary-dark-1" data-dismiss="modal">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONFIRM LOGOUT-->
+    <div class="modal fade" id="confirmLogout" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">Logout Your Account</div>
+          </div>
+          <div class="modal-body"><img class="d-block mx-auto" src="./images/confirm-logout.png" alt="confirm-logout"/></div>
+          <div class="modal-footer">
+            <div class="form-group-buttons-2">
+              <button class="btn btn-block btn-lg btn-outline-primary-dark-1" id="sign-out">Logout</button>
+              <button class="btn btn-block btn-lg btn-primary-dark-1" data-dismiss="modal">Back</button>
             </div>
           </div>
         </div>

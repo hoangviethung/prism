@@ -25,7 +25,7 @@ html(lang="en")
                         button.modal-button-close(data-dismiss="modal")
                             i.far.fa-times
                     .modal-body
-                        form.form-container(action="") 
+                        form.form-container(action="")
                             .form-wrapper.form-auth
                                 .form-control-have-label
                                     label.form-label Your wallet name
@@ -43,7 +43,7 @@ html(lang="en")
                         button.modal-button-close(data-dismiss="modal")
                             i.far.fa-times
                     .modal-body
-                        form.form-container(action="") 
+                        form.form-container(action="")
                             .form-wrapper.form-auth
                                 .form-control-have-label
                                     label.form-label Account name
@@ -61,7 +61,7 @@ html(lang="en")
                         button.modal-button-close(data-dismiss="modal")
                             i.far.fa-times
                     .modal-body
-                        form.form-container(action="") 
+                        form.form-container(action="")
                             .form-wrapper.form-auth
                                 .form-control-have-label
                                     label.form-label Enter your password
@@ -70,7 +70,7 @@ html(lang="en")
                         .form-group-buttons-2
                             button.btn.btn-block.btn-lg.btn-outline-primary-dark-1(data-dismiss="modal") Back
                             button.btn.btn-block.btn-lg.btn-primary-dark-1 Next
-        // BACKUP WALLET
+        // BACKUP WALLET SUCCESSFULLY
         .modal.fade#successBackupWallet(tabindex="-1" role="dialog" aria-hidden="true")
             .modal-dialog.modal-dialog-centered
                 .modal-content
@@ -93,7 +93,7 @@ html(lang="en")
                         button.modal-button-close(data-dismiss="modal")
                             i.far.fa-times
                     .modal-body
-                        form.form-container(action="") 
+                        form.form-container(action="")
                             .form-wrapper.form-auth
                                 .form-control-have-label
                                     label.form-label Enter your password
@@ -102,6 +102,64 @@ html(lang="en")
                         .form-group-buttons-2
                             button.btn.btn-block.btn-lg.btn-outline-primary-dark-1(data-dismiss="modal") Back
                             button.btn.btn-block.btn-lg.btn-primary-dark-1 Next
+        // VIEW SECRET PHRASES
+        .modal.fade#viewSecretPhrases(tabindex="-1" role="dialog" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        .modal-title View Secrect Phrases
+                        button.modal-button-close(data-dismiss="modal")
+                            i.far.fa-times
+                    .modal-body
+                        form.form-container(action="")
+                            .form-wrapper.form-auth
+                                .form-control-have-label
+                                    label.form-label Enter your password
+                                    input.form-control(type="password", name="password" placeholder="Your Password")
+                    .modal-footer
+                        .form-group-buttons-2
+                            button.btn.btn-block.btn-lg.btn-outline-primary-dark-1(data-dismiss="modal") Back
+                            button.btn.btn-block.btn-lg.btn-primary-dark-1 Next
+        // VIEW SECRET PHRASES
+        .modal.fade#copySecretPhrases(tabindex="-1" role="dialog" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        .modal-title View Secrect Phrases
+                        button.modal-button-close(data-dismiss="modal")
+                            i.far.fa-times
+                    .modal-body
+                        .secret-phrases
+                            .secret-phrases__item release
+                            .secret-phrases__item rose
+                            .secret-phrases__item update
+                            .secret-phrases__item void
+                            .secret-phrases__item accident
+                            .secret-phrases__item coil
+                            .secret-phrases__item dove
+                            .secret-phrases__item glass
+                            .secret-phrases__item humor
+                            .secret-phrases__item need
+                            .secret-phrases__item peanut
+                            .secret-phrases__item rabit
+                        .group-button-action
+                            button.btn.btn-sm.btn-link.button-copy-secret-phrases
+                                i.fa.fa-solid.fa-copy
+                                span Copy secret phrases
+                    .modal-footer
+                        button.btn.btn-block.btn-lg.btn-primary-dark-1(data-dismiss="modal") Done
+        // CONFIRM LOGOUT
+        .modal.fade#confirmLogout(tabindex="-1" role="dialog" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        .modal-title Logout Your Account
+                    .modal-body
+                        img.d-block.mx-auto(src="./images/confirm-logout.png", alt="confirm-logout")
+                    .modal-footer
+                        .form-group-buttons-2
+                            button#sign-out.btn.btn-block.btn-lg.btn-outline-primary-dark-1 Logout
+                            button.btn.btn-block.btn-lg.btn-primary-dark-1(data-dismiss="modal") Back
         include js
         // *** JS CUSTOM PAGE *** //
         block js
