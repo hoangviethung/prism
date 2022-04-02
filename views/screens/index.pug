@@ -3,6 +3,8 @@ extends ../layouts/layout
 block var
     - bodyClass = "login-page"
     - pageTitle = "Prism | Login Page"
+block js_run_first
+    script(src="./js/sign-in.js")
 block css
     link(rel="stylesheet", href="./css/login.css")
 block main
@@ -25,7 +27,7 @@ block main
                             input.form-control(type="password", name="password", value="")
                 .forgot-password
                     a(href="password-recovery.html") Forgot password?
-            a.btn.btn-block.btn-lg.btn-primary-dark-1(href="create-wallet.html") Log in
+            a#sign-in.btn.btn-block.btn-lg.btn-primary-dark-1 Log in
             .other-login
                 .or Or sign in with
                 .d-flex.jc-c.al-c
@@ -36,6 +38,6 @@ block main
                     .sign-up
                         p.dont-wallet
                             span Don't have wallet? 
-                            span.fw-700 Sign up
+                            a(href="create-wallet.html").fw-700 Sign up
                     .restore-wallet
                         a(href="restore-wallet.html").fw-700 Restore a wallet

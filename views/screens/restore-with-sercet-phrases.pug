@@ -20,13 +20,13 @@ block main
                         .form-wrapper.form-auth
                             .form-control-have-label
                                 label.form-label Enter Secret Phrases
-                                textarea(name="phrases", cols="30", rows="10") 
+                                textarea(name="phrases", cols="30", rows="10", placeholder="Enter secret phrases")
                             .form-control-have-label
                                 label.form-label New Wallet Password 
                                     span.note (min 8 characters)
-                                input.form-control(type="password", name="password", value="")
+                                input.form-control(type="password", name="password", value="", placeholder='New wallet password')
                             .form-control-have-label
                                 label.form-label Confirm
-                                input.form-control(type="password", name="confirm", value="")
+                                input.form-control(type="password", name="confirm", value="", placeholder='Confirm')
                             .form-control-action.position-center-bottom
-                                a.btn.btn-block.btn-lg.btn-primary-dark-1(href="#") Next
+                                a.btn.btn-block.btn-lg.btn-primary-dark-1(href="name-your-wallet.html") Next

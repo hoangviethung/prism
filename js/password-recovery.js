@@ -1,8 +1,9 @@
 $(document).ready(function() {
+    var email = "admin@prismwallet.com";
     $('.password-recovery-form form .form-control').on('keyup', function(e) {
         var inputEmail = $(this).val();
         var invalidText = $('.invalid-feedback');
-        if (validateEmail(inputEmail) && $) {
+        if (validateEmail(inputEmail) && inputEmail === email) {
             invalidText.removeClass('is-invalid');
         } else {
             invalidText.addClass('is-invalid');
@@ -11,10 +12,11 @@ $(document).ready(function() {
 });
 
 function sendEmailRecovery() {
+    var email = "admin@prismwallet.com";
     $('.password-recovery-form form #send-email').on('click', function(e) {
         e.preventDefault();
         var inputEmail = $('.password-recovery-form input[name=email]').val();
-        if (validateEmail(inputEmail)) {
+        if (validateEmail(inputEmail) && inputEmail === email) {
             $('.password-recovery-form').addClass('d-none');
             $('.password-recovery-verify').removeClass('d-none');
         } else {
@@ -36,6 +38,8 @@ function confirmPasswordRecovery() {
         // verify password with BE and auto log in
 
         // demo
+        window.localStorage.setItem('authentication', 'true');
+        window.location.replace('/home.html');
     });
 };
 

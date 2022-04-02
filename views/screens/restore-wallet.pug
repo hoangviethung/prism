@@ -1,5 +1,7 @@
 extends ../layouts/layout
 
+block js
+    script(src="./js/restore-wallet.js")
 block css
     link(rel="stylesheet", href="./css/restore.css")
 block main
@@ -22,15 +24,15 @@ block main
                             img(src="/images/res-json.png", alt="restore")
                             p Restore with Json file
                     li.restore-item
-                        a(href="restore-with-hardware.html").d-flex.al-c
+                        a#restore-trezor.d-flex.al-c
                             img(src="/images/res-trezor.png", alt="restore")
                             p Restore with Trezor wallet
                     li.restore-item
-                        a(href="restore-with-hardware.html").d-flex.al-c
+                        a#restore-ledger(href="restore-with-hardware.html").d-flex.al-c
                             img(src="/images/res-ledger.png", alt="restore")
                             p Restore with Ledger wallet
                     li.restore-item
-                        a(href="restore-with-hardware.html").d-flex.al-c
+                        a#restore-grid(href="restore-with-hardware.html").d-flex.al-c
                             img(src="/images/res-grid.png", alt="restore")
                             p Restore with Grid+ device
 
