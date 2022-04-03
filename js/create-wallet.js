@@ -127,23 +127,23 @@ function _renderSecretPhrasesTemplate() {
 
 function _renderVerifySecretPhrases() {
     return `<div class="verify-secret-phrases-screen">
-                <h3 class="sub-title-screen">Save your secret phrases to a safe place!</h3>
+                <h3 class="sub-title-screen">Verify secret phrases</h3>
                     <div class="verify-secret-phrases">
                         <div class="verify-secret-phrases__item">
                             <div class="sequence">1.</div>
-                            <div class="value">release</div>
+                            <input type="text" maxlength="10" value/>
                         </div>
                         <div class="verify-secret-phrases__item">
                             <div class="sequence">2.</div>
-                            <div class="value">update</div>
+                            <input type="text" maxlength="10" value/>
                         </div>
                         <div class="verify-secret-phrases__item">
                             <div class="sequence">3.</div>
-                            <div class="value">rose</div>
+                            <input type="text" maxlength="10" value/>
                         </div>
                         <div class="verify-secret-phrases__item">
                             <div class="sequence">4.</div>
-                            <div class="value">void</div>
+                            <input type="text" maxlength="10" value/>
                         </div>
                     </div>
                 <div class="form-control-action position-center-bottom">
